@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="overriding-speech-service - demo">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/examples/overriding-speech-service - demo.zip!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

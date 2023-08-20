@@ -1,0 +1,107 @@
+apply plugin: 'com.android.application'
+
+ext {
+    grpcVersion = '1.4.0'
+}
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.ubtrobot.speech.demo"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        multiDexEnabled true
+        testInstrumentationRunner "androidx.testNLP.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+        disable 'GoogleAppIndexingWarning'
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+    repositories {
+        flatDir {
+            dirs 'rosa-libs'
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/INDEX.LIST'
+        exclude 'META-INF/DEPENDENCIES'
+    }
+}
+
+configurations.all {
+    resolutionStrategy {
+        force 'com.google.auth:google-auth-library-credentials:0.7.1'
+        force 'com.google.http-client:google-http-client:1.19.0'
+        force 'com.google.protobuf:protobuf-java:3.4.0'
+        force 'io.grpc:grpc-core:1.21.0'
+        force 'io.grpc:grpc-protobuf:1.17.1'
+        force 'io.grpc:grpc-protobuf-lite:1.17.1'
+        force 'io.grpc:grpc-netty-shaded:1.17.1'
+        force 'io.grpc:grpc-auth:1.17.1'
+    }
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'javax.annotation:javax.annotation-api:1.3.2'
+
+    // To replace the packages necessary for voice services, you must add
+    implementation(name: 'rosa-speech-override-1.0.0', ext: 'aar')
+
+    /****************************************************************/
+    /**
+     *  notice:
+     *  Rosa-x.y.z.jar Please obtain the package from the official website or contact relevant
+     *  personnel, and if the system has the rosa jar package, please ensure that the version
+     *  number is consistent。
+     *
+     *  Dependent mode:
+     *  1. If the corresponding jar file is already built into the system firmware, please use
+     *  the compileOnly method， It means only compile and use, and in the manifest file,
+     *  add the following configuration
+     *              <uses-library
+     *             android:name="com.ubtrobot.rosa"
+     *             android:required="true" />
+     *  2. If the corresponding jar is not built into the system firmware, please use the implementation method
+     * */
+    // The main package of ROSA, which contains various interfaces and basic classes, must be added
+    implementation files('rosa-libs/rosa-2.7.0.jar')
+    // ROSA voice NLP conversion interface, required to cover NLP
+    implementation files('rosa-libs/impl-nlpconvert-1.0.0.jar')
+    // ROSA Network Toolkit
+    implementation files('rosa-libs/okhttp-sign-interceptor-0.1.3.jar')
+
+    /****************************************************************/
+
+    //The following are the other dependencies required to use google
+    implementation 'io.grpc:grpc-okhttp:1.21.0'
+    implementation 'io.grpc:grpc-stub:1.27.0'
+    implementation 'io.grpc:grpc-api:1.27.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.6.2'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.2'
+    implementation 'com.squareup.okhttp3:okhttp:3.12.2'
+    implementation 'com.squareup.okhttp3:logging-interceptor:3.10.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.google.auth:google-auth-library-oauth2-http:0.20.0'
+    implementation 'com.google.cloud:google-cloud-texttospeech:0.80.0-beta'
+    implementation 'com.google.cloud:google-cloud-speech:1.22.3'
+    implementation 'com.google.api.grpc:grpc-google-cloud-speech-v1:0.1.27'
+
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+}

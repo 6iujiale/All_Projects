@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+        }
+        body{
+            background-color: #6d6d6d;
+        }
+        .book{
+            margin: 100px auto;
+            width: 800px;
+            height: 400px;
+            border-top: 1px solid #ECECEC;
+        }
+        .book .hd{
+            height: 50px;
+            line-height: 50px;
+            font-size: 28px;
+        }
+        .book .bd{
+            height: 350px;
+        }
+        .book .bd .box1{
+            width: 500px;
+            height: 100%;
+            float: left;
+        }
+        .book .bd .box1 li{
+            width: 400px;
+            height: 100px;
+            margin: 10px auto;
+            border: 1px solid #ECECEC;
+        }
+
+        .book .bd .box1 li h4{
+            margin-left: 10px;
+        }
+
+        .book .bd .box1 li:nth-child(3)>h4{
+            color: red;
+        }
+        .book .bd .box1 li p{
+            font-size: 12px;
+            margin: 5px 30px;
+        }
+        .book .bd .box2{
+            margin-top: 5px;
+            width: 300px;
+            height: 300px;
+            background-color: skyblue;
+            float: right;
+            box-sizing: border-box;
+            border: 1px solid #ECECEC;
+        }
+        /* .book .bd .box2 {
+           background: url("https://tse2-mm.cn.bing.net/th/id/OIP-C.Bjbyw7gdP-OwU9gs3pMWvAHaHa?w=188&h=187&c=7&r=0&o=5&dpr=1.7&pid=1.7") no-repeat;
+           background-size: 100% 250px;
+        } */
+        .book .bd .box2 img{
+            width: 100%;
+            height: 250px;
+        }
+    </style>
+</head>
+<body>
+    <div class="book">
+        <div class="hd">
+            <h4>当当网部分目录</h4>
+        </div>
+        <div class="bd">
+            <div class="box1">
+                <ul>
+                    <li>
+                        <h4>文字类</h4>
+                        <p>余秋雨 文化苦旅</p>
+                        <p>余秋雨 文化苦旅</p>
+                        <p>余秋雨 文化苦旅</p>
+                    </li>
+                    <li>
+                        <h4>文字类</h4>
+                        <p>余秋雨 文化苦旅</p>
+                        <p>余秋雨 文化苦旅</p>
+                        <p>余秋雨 文化苦旅</p>
+                    </li>
+                    <li>
+                        <h4>文字类</h4>
+                        <p>余秋雨 文化苦旅</p>
+                        <p>余秋雨 文化苦旅</p>
+                        <p>余秋雨 文化苦旅</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="box2">
+                <img src="https://tse2-mm.cn.bing.net/th/id/OIP-C.Bjbyw7gdP-OwU9gs3pMWvAHaHa?w=188&h=187&c=7&r=0&o=5&dpr=1.7&pid=1.7">
+                <button>切换</button>         
+            </div>
+        </div>
+    </div>
+</body>
+</html>

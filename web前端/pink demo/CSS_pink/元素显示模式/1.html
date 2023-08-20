@@ -1,0 +1,110 @@
+<!--CSS笔记(3)
+元素显示模式
+    块元素
+        <div>
+            1.独占一行
+            2.高度、宽度、外边距及内边距都可以控制
+            3.宽度默认是容器(父级宽度)的100%
+            4.是一个容器及盒子，里面可以放行内或者块级元素。
+        注意
+            1.文字类的元素内不能使用块级元素
+            2.<p>等文字标签主要用于存放文字，因此<p>里面不能放块级元素。
+    
+
+    行内元素
+        <span>
+            1.相邻行内元素在一行上，一行可以显示多个。
+            2.高、宽度直接设置是无效的。
+            3.默认宽度就是他本身内容的宽度。
+            4.行内元素只能容纳文本或其他行内元素。
+        注意
+            1.链接里面不能再放链接
+            2.特殊情况下<a>里面可以放块级元素，但是给<a>转换一下块级模式最安全
+        
+
+    行内块元素
+            1.和相邻行内元素(行内块)在一行上，之间有空白空隙，一行显示多个。
+            2.默认宽度就是他本身的宽度(行内元素特点)
+            3.高度、行高、边距以及内边距可以控制(块级元素特点)
+
+显示模式的转换
+    转换块元素
+        display:block;
+    转化为行内元素
+        display:inline;
+    h转化为行内块元素
+        display:inline-block;
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>块元素</title>
+    <style>
+        div {
+            background-color: pink;
+            height: 200px;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>比较霸道,自己独占一行</div>
+
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>行内元素</title>
+    <style>
+        span {
+            background-color: yellow;
+            width: 100px;
+            height: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <span>比较霸道,自己独占一行</span>
+    <span>比较霸道,自己独占一行</span>
+    <span>比较霸道,自己独占一行</span>
+</body>
+
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <input type="text">
+    <input type="text">
+    <input type="text">
+</body>
+
+</html>

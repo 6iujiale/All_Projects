@@ -1,0 +1,30 @@
+@color:pink;
+@font14:12px;//定义一个 字体为14px的变量
+/* body{
+    background-color: @color;
+} */
+div{
+    color: @color;
+    font-size: @font14;
+}
+
+// less嵌套
+.header{
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    a{
+        color: red;
+        font-size: @font14;
+    }
+}
+
+.box{
+a{
+    color: red;
+    // 如果有伪类、交集选择器、伪元素选择器 内层选择器前面要加&
+    &:hover{
+        background-color: skyblue;
+    }
+}
+}

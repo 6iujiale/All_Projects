@@ -1,0 +1,35 @@
+<!--
+nth-of-type和nth-child区别
+    nth-of-type(n)针对具有一组兄弟节点的标签, 用 n 来筛选出在一组兄弟节点的位置。
+    nth-child(n)首先找到所有当前元素的兄弟元素，, 用 n 来筛选出在当前元素的兄弟元素节点的位置。
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nth-of-type和nth-child区别</title>
+    <style>
+        /* section:nth-of-type(n){
+            background-color: pink;
+        } */
+        
+        section div:nth-child(1){
+            background-color: red;
+        }/*熊大未被选择*/
+
+        section div:nth-of-type(1){
+            background-color: pink;
+        }/*熊大被选择*/
+
+    </style>
+</head>
+<body>
+    <section>
+        <p>光头强</p>
+        <div>熊大</div>
+        <div>熊二</div>
+    </section>
+</body>
+</html>

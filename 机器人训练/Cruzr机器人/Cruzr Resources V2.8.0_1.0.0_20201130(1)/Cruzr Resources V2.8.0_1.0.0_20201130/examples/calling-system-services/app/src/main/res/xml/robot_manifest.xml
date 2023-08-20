@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+    <skill
+        name="testleisureskill"
+        background="true"
+        class="com.ubtrobot.cruzr.leisure.TestLeisureSkill">
+        <directive action="/test/leisure/start/haha" />
+    </skill>
+
+</manifest>

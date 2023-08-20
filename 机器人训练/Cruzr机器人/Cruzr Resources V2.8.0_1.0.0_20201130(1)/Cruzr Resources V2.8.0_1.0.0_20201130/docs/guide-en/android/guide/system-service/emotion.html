@@ -1,0 +1,1314 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+        <meta name="author" content="Cruzr Team">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Emotion service - Cruzr Developer documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#emotion-service" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../../index.html" title="Cruzr Developer documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Cruzr Developer documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Emotion service
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../../index.html" title="Cruzr Developer documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Cruzr Developer documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../index.html" title="Update history" class="md-nav__link">
+      Update history
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../openplatform.html" title="Cruzr open platform" class="md-nav__link">
+      Cruzr open platform
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../productintroduction.html" title="Cruzr product introduction" class="md-nav__link">
+      Cruzr product introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../cruzrframe.html" title="Technical framework" class="md-nav__link">
+      Technical framework
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      QuickStart
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        QuickStart
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../adbconnect.html" title="Preparatory work（environment）" class="md-nav__link">
+      Preparatory work（environment）
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorial/build your first app.html" title="Build your first app" class="md-nav__link">
+      Build your first app
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Guidance
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Guidance
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../other/async.html" title="Promise Applications" class="md-nav__link">
+      Promise Applications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorial/create your first skill.html" title="Create your first skill" class="md-nav__link">
+      Create your first skill
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../skill.html" title="Skill" class="md-nav__link">
+      Skill
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorial/overriding-speech-service.html" title="Overriding-speech-service" class="md-nav__link">
+      Overriding-speech-service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      Commonly used class
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        Commonly used class
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../robot-context.html" title="Context" class="md-nav__link">
+      Context
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../other/serialize.html" title="Serialization" class="md-nav__link">
+      Serialization
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+    
+    <label class="md-nav__link" for="nav-7">
+      SDK documentation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        SDK documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="overview.html" title="System-service" class="md-nav__link">
+      System-service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
+    
+    <label class="md-nav__link" for="nav-7-2">
+      Speech
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-2">
+        Speech
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="speech.html" title="Speech service" class="md-nav__link">
+      Speech service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cruzr/voice-assistant.html" title="Voice-assistant" class="md-nav__link">
+      Voice-assistant
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorial/recognize understand and distribute voice instructions.html" title="Recognize understand and distribute voice instructions" class="md-nav__link">
+      Recognize understand and distribute voice instructions
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-3" type="checkbox" id="nav-7-3">
+    
+    <label class="md-nav__link" for="nav-7-3">
+      Locomotion
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-3">
+        Locomotion
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="locomotion.html" title="Locomotion control service" class="md-nav__link">
+      Locomotion control service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="navigation.html" title="Navigation service" class="md-nav__link">
+      Navigation service
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-4" type="checkbox" id="nav-7-4">
+    
+    <label class="md-nav__link" for="nav-7-4">
+      Hardware
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-4">
+        Hardware
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="sensor.html" title="Sensor service" class="md-nav__link">
+      Sensor service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="servo.html" title="Servo service" class="md-nav__link">
+      Servo service
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="power.html" title="Power service" class="md-nav__link">
+      Power service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recharging.html" title="Recharging service" class="md-nav__link">
+      Recharging service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cruzr/user management.html" title="User management" class="md-nav__link">
+      User management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cruzr/visual.html" title="Visual service" class="md-nav__link">
+      Visual service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cruzr/leisure.html" title="Leisure service" class="md-nav__link">
+      Leisure service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cruzr/multimedia.html" title="Multimedia service" class="md-nav__link">
+      Multimedia service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-11" type="checkbox" id="nav-7-11" checked>
+    
+    <label class="md-nav__link" for="nav-7-11">
+      Expression
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-11">
+        Expression
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Emotion service
+      </label>
+    
+    <a href="emotion.html" title="Emotion service" class="md-nav__link md-nav__link--active">
+      Emotion service
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#display-emotions" class="md-nav__link">
+    Display emotions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#close-the-emotion" class="md-nav__link">
+    Close the emotion
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emotion-list" class="md-nav__link">
+    Emotion list
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emotion-picture" class="md-nav__link">
+    Emotion picture
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="motion.html" title="Motion control" class="md-nav__link">
+      Motion control
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="orchestration.html" title="Dance service" class="md-nav__link">
+      Dance service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="light.html" title="Lighting services" class="md-nav__link">
+      Lighting services
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="skillmanager.html" title="Skill manager" class="md-nav__link">
+      Skill manager
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="diagnosis.html" title="Diagnosis service" class="md-nav__link">
+      Diagnosis service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cruzr/setting.html" title="System settings" class="md-nav__link">
+      System settings
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../faq.html" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../compatibility.html" title="Compatibility" class="md-nav__link">
+      Compatibility
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#display-emotions" class="md-nav__link">
+    Display emotions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#close-the-emotion" class="md-nav__link">
+    Close the emotion
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emotion-list" class="md-nav__link">
+    Emotion list
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#emotion-picture" class="md-nav__link">
+    Emotion picture
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="emotion-service">Emotion service</h1>
+<p>The emotion service provides the API's ability to call the device's "emotions". As an emotion service access agent, <code>EmotionManager</code> provides the main API of the emotion service, which can be obtained through the <a href="../robot-context.html"><code>RobotContext</code></a> object.</p>
+<div class="codehilite"><pre><span></span><span class="n">EmotionManager</span> <span class="n">emotionManager</span> <span class="o">=</span> <span class="n">aRobotContext</span><span class="p">.</span><span class="na">getSystemService</span><span class="p">(</span><span class="n">EmotionManager</span><span class="p">.</span><span class="na">SERVICE</span><span class="p">);</span>
+</pre></div>
+
+
+<h2 id="display-emotions">Display emotions</h2>
+<p>When the device is required to display emotions such as "happy", "angry", "sad", and "laugh", like humans do, it can be achieved by displaying the emotions.</p>
+<div class="codehilite"><pre><span></span><span class="n">promise</span> <span class="cm">/* [2] */</span> <span class="o">=</span> <span class="n">emotionManager</span><span class="p">.</span><span class="na">express</span><span class="p">(</span><span class="n">Uri</span><span class="p">.</span><span class="na">parse</span><span class="p">(</span><span class="s">&quot;emotion://va/happy&quot;</span><span class="p">)</span> <span class="cm">/* [1] */</span><span class="p">)</span>
+    <span class="p">.</span><span class="na">progress</span><span class="p">(</span><span class="k">new</span> <span class="n">ProgressCallback</span><span class="o">&lt;</span><span class="n">ExpressingProgress</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onProgress</span><span class="p">(</span><span class="n">ExpressingProgress</span> <span class="n">expressingProgress</span> <span class="cm">/* [3] */</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// Callback the display process of the emotions</span>
+        <span class="p">}</span>
+    <span class="p">})</span>
+    <span class="p">.</span><span class="na">done</span><span class="p">(</span><span class="k">new</span> <span class="n">DoneCallback</span><span class="o">&lt;</span><span class="n">Void</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onDone</span><span class="p">(</span><span class="n">Void</span> <span class="n">aVoid</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// Callback the emotions finish displaying</span>
+        <span class="p">}</span>
+    <span class="p">})</span>
+    <span class="p">.</span><span class="na">fail</span><span class="p">(</span><span class="k">new</span> <span class="n">FailCallback</span><span class="o">&lt;</span><span class="n">EmotionException</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onFail</span><span class="p">(</span><span class="n">EmotionException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// Callback the emotion display failed</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+</pre></div>
+
+
+<p>[1]The unique identification of the emotion to be displayed.</p>
+<p>[2]Return the asynchronous object that is waiting to display progress and results. Through the object, you can wait or monitor the progress and results, or cancel the display process. See <a href="../other/async.html"><code>Promise</code></a> for specific usage.</p>
+<p>[3]The <code>ExpressingProgress</code> object of the asynchronous callback describes the progress information of the emotion display, including:</p>
+<table>
+<thead>
+<tr>
+<th>Attribute getter</th>
+<th>Descriptions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ExpressingProgress.progress</td>
+<td>Progress information <br/><code>began</code>: start of display <br/><code>ended</code>: end of display</td>
+</tr>
+</tbody>
+</table>
+<p>By specifying options, you can adjust the action of the emotion display.</p>
+<div class="codehilite"><pre><span></span><span class="n">ExpressingOption</span> <span class="cm">/* [1] */</span> <span class="n">option</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ExpressingOption</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span>
+    <span class="n">Uri</span><span class="p">.</span><span class="na">parse</span><span class="p">(</span><span class="s">&quot;emotion://va/happy&quot;</span><span class="p">)).</span><span class="na">build</span><span class="p">();</span>
+<span class="n">promise</span> <span class="o">=</span> <span class="n">emotionManager</span><span class="p">.</span><span class="na">express</span><span class="p">(</span><span class="n">option</span><span class="p">);</span>
+</pre></div>
+
+
+<p>[1] The <code>ExpressingOption</code> object is constructed using <code>ExpressingOption.Builder</code>. The instructions are as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Descriptions</th>
+<th>Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Builder.constructor(uri)</td>
+<td>The URI of the emotion to be displayed must be imported during construction</td>
+<td></td>
+</tr>
+<tr>
+<td>Builder.setSticky(sticky)</td>
+<td>Whether the display process is allowed to be interrupted <br/><code>true</code>: cannot be interrupted</td>
+<td>false</td>
+</tr>
+<tr>
+<td>Builder.setLoops(loops)</td>
+<td>Number of loop display <br/><code>0</code>: unlimited</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Builder.setExtension(extension)</td>
+<td>Customized parameters</td>
+<td>JsonObjectString.EMPTY_OBJECT</td>
+</tr>
+</tbody>
+</table>
+<p>If you need the device to cry and laugh like a human, you can specify multiple options.</p>
+<div class="codehilite"><pre><span></span><span class="n">ExpressingOption</span> <span class="n">option1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ExpressingOption</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span>
+    <span class="n">Uri</span><span class="p">.</span><span class="na">parse</span><span class="p">(</span><span class="s">&quot;emotion://va/cry&quot;</span><span class="p">)).</span><span class="na">build</span><span class="p">();</span>
+<span class="n">ExpressingOption</span> <span class="n">option2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ExpressingOption</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span>
+    <span class="n">Uri</span><span class="p">.</span><span class="na">parse</span><span class="p">(</span><span class="s">&quot;emotion://va/happy&quot;</span><span class="p">)).</span><span class="na">build</span><span class="p">();</span>
+<span class="n">promise</span> <span class="o">=</span> <span class="n">emotionManager</span><span class="p">.</span><span class="na">expressSerially</span><span class="p">(</span><span class="n">option1</span><span class="p">,</span> <span class="n">option2</span> <span class="cm">/* [1] */</span><span class="p">);</span>
+</pre></div>
+
+
+<p>[1] The set of emotions to be displayed can also be written as follows:</p>
+<div class="codehilite"><pre><span></span><span class="n">List</span><span class="o">&lt;</span><span class="n">ExpressingOption</span><span class="o">&gt;</span> <span class="n">optionList</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="n">optionList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">option1</span><span class="p">);</span>
+<span class="n">optionList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">option2</span><span class="p">);</span>
+<span class="n">promise</span> <span class="o">=</span> <span class="n">emotionManager</span><span class="p">.</span><span class="na">expressSerially</span><span class="p">(</span><span class="n">optionList</span><span class="p">);</span>
+</pre></div>
+
+
+<p>If you want to know the emotion that is currently displayed, you can use the following code.</p>
+<div class="codehilite"><pre><span></span><span class="n">emotionManager</span><span class="p">.</span><span class="na">getExpressing</span><span class="p">();</span>
+</pre></div>
+
+
+<p>The unique identifier of the emotion is returned.</p>
+<p>If you want to know if there are any emotions on display, you can use the following code.</p>
+<div class="codehilite"><pre><span></span><span class="n">emotionManager</span><span class="p">.</span><span class="na">isExpressing</span><span class="p">();</span>
+</pre></div>
+
+
+<p>If <code>true</code> is returned, it means that there are emotions on display.</p>
+<h2 id="close-the-emotion">Close the emotion</h2>
+<p>If you want the device to return to the normal interactive interface and no longer display emotions, use the following code.</p>
+<div class="codehilite"><pre><span></span><span class="n">emotionManager</span><span class="p">.</span><span class="na">dismiss</span><span class="p">();</span>
+</pre></div>
+
+
+<h2 id="emotion-list">Emotion list</h2>
+<p>Science style</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>id</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>daze</td>
+<td>techface_daze</td>
+</tr>
+<tr>
+<td>smile</td>
+<td>techface_smile</td>
+</tr>
+<tr>
+<td>happy</td>
+<td>techface_happy</td>
+</tr>
+<tr>
+<td>love</td>
+<td>techface_love</td>
+</tr>
+<tr>
+<td>shy</td>
+<td>techface_shy</td>
+</tr>
+<tr>
+<td>music</td>
+<td>techface_music</td>
+</tr>
+<tr>
+<td>speak</td>
+<td>techface_speak</td>
+</tr>
+<tr>
+<td>upset</td>
+<td>techface_upset</td>
+</tr>
+<tr>
+<td>amazing</td>
+<td>techface_amazing</td>
+</tr>
+<tr>
+<td>naughty</td>
+<td>techface_naughty</td>
+</tr>
+<tr>
+<td>grin</td>
+<td>techface_grin</td>
+</tr>
+<tr>
+<td>wronged</td>
+<td>techface_wronged</td>
+</tr>
+<tr>
+<td>proud</td>
+<td>techface_proud</td>
+</tr>
+<tr>
+<td>default</td>
+<td>techface_default</td>
+</tr>
+<tr>
+<td>data</td>
+<td>techface_data</td>
+</tr>
+<tr>
+<td>monitor</td>
+<td>techface_monitor</td>
+</tr>
+<tr>
+<td>standby</td>
+<td>techface_standby</td>
+</tr>
+<tr>
+<td>doubt</td>
+<td>techface_doubt</td>
+</tr>
+</tbody>
+</table>
+<p>Lovely style</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>id</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>daze</td>
+<td>face_daze</td>
+</tr>
+<tr>
+<td>happy</td>
+<td>face_happy</td>
+</tr>
+<tr>
+<td>love</td>
+<td>face_love</td>
+</tr>
+<tr>
+<td>shy</td>
+<td>face_shy</td>
+</tr>
+<tr>
+<td>music</td>
+<td>face_music</td>
+</tr>
+<tr>
+<td>speak</td>
+<td>face_speak</td>
+</tr>
+<tr>
+<td>upset</td>
+<td>face_upset</td>
+</tr>
+<tr>
+<td>amazing</td>
+<td>face_amazing</td>
+</tr>
+<tr>
+<td>naughty</td>
+<td>face_naughty</td>
+</tr>
+<tr>
+<td>grin</td>
+<td>face_grin</td>
+</tr>
+<tr>
+<td>wronged</td>
+<td>face_wronged</td>
+</tr>
+<tr>
+<td>proud</td>
+<td>face_proud</td>
+</tr>
+<tr>
+<td>smile</td>
+<td>face_smile</td>
+</tr>
+<tr>
+<td>default</td>
+<td>face_default</td>
+</tr>
+</tbody>
+</table>
+<p>Little star style</p>
+<table>
+<thead>
+<tr>
+<th>name</th>
+<th>id</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>proud</td>
+<td>littlestar_proud</td>
+</tr>
+<tr>
+<td>daze</td>
+<td>littlestar_daze</td>
+</tr>
+<tr>
+<td>sleepy</td>
+<td>littlestar_sleepy</td>
+</tr>
+<tr>
+<td>awkward</td>
+<td>littlestar_embarrassed</td>
+</tr>
+<tr>
+<td>shy</td>
+<td>littlestar_shy</td>
+</tr>
+<tr>
+<td>amazing</td>
+<td>littlestar_amazing</td>
+</tr>
+<tr>
+<td>happy</td>
+<td>littlestar_happy</td>
+</tr>
+<tr>
+<td>naughty</td>
+<td>littlestar_naughty</td>
+</tr>
+<tr>
+<td>smile</td>
+<td>littlestar_smile</td>
+</tr>
+<tr>
+<td>like</td>
+<td>littlestar_love</td>
+</tr>
+</tbody>
+</table>
+<h2 id="emotion-picture">Emotion picture</h2>
+<p><img alt="emotion" src="emotion.png" /></p>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../../../cruzr/multimedia.html" title="Multimedia service" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Multimedia service
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="motion.html" title="Motion control" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Motion control
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2020 Cruzr
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+    
+  </body>
+</html>

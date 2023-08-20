@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest>
+    <leisures>
+        <task
+            action="/test/leisure/start/haha"
+            key="testleisure"
+            open="false"
+            priority="8"
+            skillName="testleisureskill"
+            time="10"
+            wakeup="false"
+            >
+        </task>
+    </leisures>
+</manifest>

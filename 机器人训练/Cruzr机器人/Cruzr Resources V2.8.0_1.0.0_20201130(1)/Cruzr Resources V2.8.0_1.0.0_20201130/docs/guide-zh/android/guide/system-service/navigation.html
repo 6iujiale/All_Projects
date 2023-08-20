@@ -1,0 +1,1610 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+        <meta name="author" content="Cruzr Team">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>导航服务 - Cruzr 开发者文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#_1" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../../index.html" title="Cruzr 开发者文档" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Cruzr 开发者文档
+            </span>
+            <span class="md-header-nav__topic">
+              
+                导航服务
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../../index.html" title="Cruzr 开发者文档" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Cruzr 开发者文档
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../index.html" title="更新历史" class="md-nav__link">
+      更新历史
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../openplatform.html" title="Cruzr开放平台" class="md-nav__link">
+      Cruzr开放平台
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../productintroduction.html" title="Cruzr产品介绍" class="md-nav__link">
+      Cruzr产品介绍
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      技术架构
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        技术架构
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cruzrframe.html" title="本体技术架构" class="md-nav__link">
+      本体技术架构
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cloud/cloudframe.html" title="云端技术架构" class="md-nav__link">
+      云端技术架构
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      快速入门
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        快速入门
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../adbconnect.html" title="准备工作（工作环境）" class="md-nav__link">
+      准备工作（工作环境）
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorial/build your first app.html" title="创建机器人应用" class="md-nav__link">
+      创建机器人应用
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cloud/cloud.html" title="云端接入" class="md-nav__link">
+      云端接入
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      开发指导
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        开发指导
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../other/async.html" title="Promise的应用" class="md-nav__link">
+      Promise的应用
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorial/create your first skill.html" title="创建第一个技能" class="md-nav__link">
+      创建第一个技能
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../skill.html" title="Skill" class="md-nav__link">
+      Skill
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorial/overriding-speech-service.html" title="替换语音服务" class="md-nav__link">
+      替换语音服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      常用类说明
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        常用类说明
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../robot-context.html" title="上下文" class="md-nav__link">
+      上下文
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../other/serialize.html" title="序列化" class="md-nav__link">
+      序列化
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+    
+    <label class="md-nav__link" for="nav-7">
+      本体SDK接口文档
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        本体SDK接口文档
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="overview.html" title="系统服务" class="md-nav__link">
+      系统服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
+    
+    <label class="md-nav__link" for="nav-7-2">
+      语音相关
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-2">
+        语音相关
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="speech.html" title="语音服务" class="md-nav__link">
+      语音服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cruzr/voice-assistant.html" title="语音助手" class="md-nav__link">
+      语音助手
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorial/recognize understand and distribute voice instructions.html" title="识别-理解-分发语音指令" class="md-nav__link">
+      识别-理解-分发语音指令
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-3" type="checkbox" id="nav-7-3" checked>
+    
+    <label class="md-nav__link" for="nav-7-3">
+      运动相关
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-3">
+        运动相关
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="locomotion.html" title="运动服务" class="md-nav__link">
+      运动服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        导航服务
+      </label>
+    
+    <a href="navigation.html" title="导航服务" class="md-nav__link md-nav__link--active">
+      导航服务
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    地图库
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    当前地图
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    定位
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    导航
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    监听位置
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-4" type="checkbox" id="nav-7-4">
+    
+    <label class="md-nav__link" for="nav-7-4">
+      硬件能力
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-4">
+        硬件能力
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="sensor.html" title="传感器服务" class="md-nav__link">
+      传感器服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="servo.html" title="舵机服务" class="md-nav__link">
+      舵机服务
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="power.html" title="电源服务" class="md-nav__link">
+      电源服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recharging.html" title="充电服务" class="md-nav__link">
+      充电服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cruzr/user management.html" title="用户管理" class="md-nav__link">
+      用户管理
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cruzr/visual.html" title="视觉服务" class="md-nav__link">
+      视觉服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cruzr/leisure.html" title="空闲服务" class="md-nav__link">
+      空闲服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cruzr/multimedia.html" title="多媒体服务" class="md-nav__link">
+      多媒体服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-11" type="checkbox" id="nav-7-11">
+    
+    <label class="md-nav__link" for="nav-7-11">
+      表现力相关
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-11">
+        表现力相关
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="emotion.html" title="表情服务" class="md-nav__link">
+      表情服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="motion.html" title="动作服务" class="md-nav__link">
+      动作服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="orchestration.html" title="舞蹈服务" class="md-nav__link">
+      舞蹈服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="light.html" title="灯光服务" class="md-nav__link">
+      灯光服务
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="skillmanager.html" title="技能管理" class="md-nav__link">
+      技能管理
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="diagnosis.html" title="诊断服务" class="md-nav__link">
+      诊断服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cruzr/setting.html" title="系统设置" class="md-nav__link">
+      系统设置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      云端API接口文档
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        云端API接口文档
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cloud/cloud interface1.html" title="查询基础信息" class="md-nav__link">
+      查询基础信息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cloud/cloud interface2.html" title="查询诊断信息" class="md-nav__link">
+      查询诊断信息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cloud/cloud interface3.html" title="查询人脸库" class="md-nav__link">
+      查询人脸库
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cloud/cloud interface4.html" title="查询活跃信息" class="md-nav__link">
+      查询活跃信息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cloud/cloud interface5.html" title="查询语音信息" class="md-nav__link">
+      查询语音信息
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../faq.html" title="常见问题FAQ" class="md-nav__link">
+      常见问题FAQ
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../compatibility.html" title="兼容性说明" class="md-nav__link">
+      兼容性说明
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    地图库
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    当前地图
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    定位
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    导航
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    监听位置
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="_1">导航服务</h1>
+<p>导航服务用于提供机器人从当前位置移动到目的地的能力，<code>NavigationManager</code> 提供了地图管理、定位、移动等能力的相应 API 。</p>
+<p>可通过<a href="../robot-context.html"><code>RobotContext</code></a> 对象获取到<code>NavigationManager</code>。</p>
+<div class="codehilite"><pre><span></span><span class="n">NavigationManager</span> <span class="n">navigationManager</span> <span class="o">=</span> <span class="n">robotContext</span><span class="p">.</span><span class="na">getSystemService</span><span class="p">(</span><span class="n">NavigationManager</span><span class="p">.</span><span class="na">SERVICE</span><span class="p">);</span>
+</pre></div>
+
+
+<h2 id="_2">地图库</h2>
+<p>地图数据文件是由特定的地图扫描机器生成，其中指定了地图的初始方向、地图原点、距离单位、标记点、游览路线等数据（这些数据在生成地图时设定，无法修改），在获取到地图数据文件后需要将其导入到地图库中。</p>
+<ul>
+<li>创建地图</li>
+</ul>
+<p>地图由标记点、图层、轨迹和地图数据组成，创建地图时根据需要添加。</p>
+<div class="codehilite"><pre><span></span>  <span class="c1">//创建标记点</span>
+  <span class="n">Marker</span> <span class="n">marker</span><span class="cm">/* [1] */</span><span class="o">=</span><span class="k">new</span> <span class="n">Marker</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="n">point</span><span class="cm">/* [2] */</span><span class="p">).</span><span class="na">build</span><span class="p">();</span>
+
+  <span class="c1">//创建图层</span>
+  <span class="n">GroundOverlay</span> <span class="n">groundOverlay</span> <span class="cm">/* [3] */</span><span class="o">=</span> <span class="k">new</span> <span class="n">GroundOverlay</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">).</span><span class="na">build</span><span class="p">();</span>
+
+  <span class="c1">//创建路线</span>
+  <span class="n">Polyline</span> <span class="n">polyline</span> <span class="cm">/* [4] */</span><span class="o">=</span> <span class="k">new</span> <span class="n">Polyline</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="n">id</span><span class="p">).</span><span class="na">build</span><span class="p">();</span>
+
+  <span class="c1">//创建地图</span>
+  <span class="n">NavMap</span> <span class="n">navMap</span> <span class="cm">/* [5] */</span><span class="o">=</span> <span class="k">new</span> <span class="n">NavMap</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="n">scale</span><span class="p">).</span><span class="na">build</span><span class="p">();</span>
+</pre></div>
+
+
+<p><code>[1]</code> <code>Marker</code>地图标记，用于描述各个坐标点，通过 <code>Marker.Builder</code> 构建，使用说明如下：</p>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Builder.constructor(point)</td>
+<td>构造方法，设置标记点坐标</td>
+</tr>
+<tr>
+<td>Builder.setId(id)</td>
+<td>设置标记ID,唯一标志</td>
+</tr>
+<tr>
+<td>Builder.setTitle(title)</td>
+<td>设置标题</td>
+</tr>
+<tr>
+<td>Builder.addTag(tag)</td>
+<td>添加标签</td>
+</tr>
+<tr>
+<td>Builder.addTag(index,tag)</td>
+<td>在指定位置添加标签</td>
+</tr>
+<tr>
+<td>Builder.addTagList(taglist)</td>
+<td>添加标签列表</td>
+</tr>
+<tr>
+<td>Builder.removeTag(index)</td>
+<td>移除指定位置的标签</td>
+</tr>
+<tr>
+<td>Builder.setDescription(description)</td>
+<td>设置描述</td>
+</tr>
+<tr>
+<td>Builder.setExtension(extension)</td>
+<td>设置扩展数据，内容自定义</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite"><pre><span></span><span class="ss">`[2]`</span> <span class="ss">`Ponit`</span><span class="err">坐标点，坐标为相对于地图原点的位置（单位与地图距离单位一致），原点为扫图起始点。</span>
+</pre></div>
+
+
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>float</td>
+<td>x</td>
+<td>x轴坐标</td>
+</tr>
+<tr>
+<td>float</td>
+<td>y</td>
+<td>y轴坐标</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite"><pre><span></span><span class="ss">`[3]`</span> <span class="ss">`GroundOverlay`</span> <span class="err">地图图层，显示时覆盖到地图上，通过</span> <span class="ss">`GroundOverlay.Builder`</span> <span class="err">构建，使用说明如下：</span>
+</pre></div>
+
+
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Builder.constructor(width, height)</td>
+<td>构造方法，宽度和高度</td>
+</tr>
+<tr>
+<td>Builder.setName(name)</td>
+<td>设置图层名称</td>
+</tr>
+<tr>
+<td>Builder.setType(type)</td>
+<td>设置图层类型</td>
+</tr>
+<tr>
+<td>Builder.setOriginInImage(originInImage)</td>
+<td>设置图层起点坐标</td>
+</tr>
+<tr>
+<td>Builder.setImage(image)</td>
+<td>设置本地图片URI</td>
+</tr>
+<tr>
+<td>Builder.setImageUrl(imageUrl)</td>
+<td>设置在线图片URL</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite"><pre><span></span><span class="err">`[4]` `Polyline` 地图上的路线，由多个 [Location](#Location) 组成，通过 `Polyline.Builder` 构建，使用说明如下：</span>
+</pre></div>
+
+
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Builder.constructor(id)</td>
+<td>构造方法，添加路线id,唯一标志</td>
+</tr>
+<tr>
+<td>Builder.setName(name)</td>
+<td>设置名称</td>
+</tr>
+<tr>
+<td>Builder.setDescription(description)</td>
+<td>设置描述</td>
+</tr>
+<tr>
+<td>Builder.addLocation(location)</td>
+<td>添加路线包含的坐标点列表</td>
+</tr>
+<tr>
+<td>Builder.addLocation(index,location)</td>
+<td>在指定位置添加坐标</td>
+</tr>
+<tr>
+<td>Builder.addLocationList(locationList)</td>
+<td>添加坐标列表</td>
+</tr>
+<tr>
+<td>Builder.removeLocation(index)</td>
+<td>移除指定位置的坐标</td>
+</tr>
+<tr>
+<td>Builder.setExtension(extension)</td>
+<td>设置扩展数据，内容自定义</td>
+</tr>
+</tbody>
+</table>
+<div class="codehilite"><pre><span></span><span class="ss">`[5]`</span> <span class="ss">`NavMap`</span><span class="err">地图，通过</span> <span class="ss">`NavMap.Builder`</span> <span class="err">构建，使用说明如下：</span>
+</pre></div>
+
+
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Builder.constructor(scale)</td>
+<td>构造时可指定地图缩放</td>
+</tr>
+<tr>
+<td>Builder.setId(id)</td>
+<td>设置地图ID</td>
+</tr>
+<tr>
+<td>Builder.setName(name)</td>
+<td>设置地图名称</td>
+</tr>
+<tr>
+<td>Builder.setNavFile(navFileUri)</td>
+<td>设置地图数据文件路径</td>
+</tr>
+<tr>
+<td>Builder.addGroundOverlay(groundOverlay)</td>
+<td>添加图层</td>
+</tr>
+<tr>
+<td>Builder.addGroundOverlay(index, groundOverlay)</td>
+<td>在列表的指定位置添加图层</td>
+</tr>
+<tr>
+<td>Builder.addGroundOverlayList(groundOverlayList)</td>
+<td>添加图层列表</td>
+</tr>
+<tr>
+<td>Builder.removeGroundOverlay(index)</td>
+<td>移除列表指定位置的图层</td>
+</tr>
+<tr>
+<td>Builder.addMarker(marker)</td>
+<td>添加标记</td>
+</tr>
+<tr>
+<td>Builder.addMarker(index, marker)</td>
+<td>在列表的指定位置标记</td>
+</tr>
+<tr>
+<td>Builder.addMarkerList(markerList)</td>
+<td>添加标记列表</td>
+</tr>
+<tr>
+<td>Builder.removeMarker(index)</td>
+<td>移除列表的指定位置的标记</td>
+</tr>
+<tr>
+<td>Builder.addPolyline(polyline)</td>
+<td>添加导航线路</td>
+</tr>
+<tr>
+<td>Builder.addPolyline(index, polyline)</td>
+<td>在列表的指定位置添加导航线路</td>
+</tr>
+<tr>
+<td>Builder.addPolylineList(polylineList)</td>
+<td>添加导航线路列表</td>
+</tr>
+<tr>
+<td>Builder.removePolyline(index)</td>
+<td>移除列表的指定位置的导航线路</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>添加地图</li>
+</ul>
+<div class="codehilite"><pre><span></span>  <span class="n">Promise</span><span class="o">&lt;</span><span class="n">NavMap</span><span class="p">,</span> <span class="n">NavMapException</span><span class="o">&gt;</span> <span class="n">addNavMapPromise</span> <span class="cm">/* [1] */</span><span class="o">=</span> <span class="n">navigationManager</span><span class="p">.</span><span class="na">addNavMap</span><span class="p">(</span><span class="n">navMap</span><span class="p">);</span> <span class="cm">/* [2] */</span>
+</pre></div>
+
+
+<p><code>[1]</code> 返回结果为<code>Promise</code>的方法为异步方法，可通过注册回调获取执行结果，也可执行<code>get()</code>方法转换成同步方法，具体请参考 <a href="../other/async.html">async</a> 。</p>
+<p><code>[2]</code> 添加地图操作可能耗时较长，使用同步方法时需要注意。</p>
+<ul>
+<li>获取地图</li>
+</ul>
+<div class="codehilite"><pre><span></span>  <span class="n">Promise</span><span class="o">&lt;</span><span class="n">NavMap</span><span class="p">,</span> <span class="n">NavMapException</span><span class="o">&gt;</span> <span class="n">getNavMapPromise</span> <span class="o">=</span> <span class="n">navigationManager</span><span class="p">.</span><span class="na">getNavMap</span><span class="p">(</span><span class="n">navMapId</span><span class="p">);</span>
+
+  <span class="n">Promise</span><span class="o">&lt;</span><span class="n">List</span><span class="o">&lt;</span><span class="n">NavMap</span><span class="o">&gt;</span><span class="p">,</span> <span class="n">NavMapException</span><span class="o">&gt;</span> <span class="n">getNavMapListPromise</span> <span class="o">=</span> <span class="n">navigationManager</span><span class="p">.</span><span class="na">getNavMapList</span><span class="p">();</span>
+</pre></div>
+
+
+<ul>
+<li>修改地图</li>
+</ul>
+<div class="codehilite"><pre><span></span>  <span class="n">Promise</span><span class="o">&lt;</span><span class="n">NavMap</span><span class="p">,</span> <span class="n">NavMapException</span><span class="o">&gt;</span> <span class="n">modifyNavMapPromise</span> <span class="o">=</span> <span class="n">navigationManager</span><span class="p">.</span><span class="na">modifyNavMap</span><span class="p">(</span><span class="n">navMap</span><span class="p">);</span>
+</pre></div>
+
+
+<ul>
+<li>移除地图</li>
+</ul>
+<div class="codehilite"><pre><span></span>  <span class="n">Promise</span><span class="o">&lt;</span><span class="n">NavMap</span><span class="p">,</span> <span class="n">NavMapException</span><span class="o">&gt;</span> <span class="n">removeNavMapPromise</span> <span class="o">=</span> <span class="n">navigationManager</span><span class="p">.</span><span class="na">removeNavMap</span><span class="p">(</span><span class="n">navMapId</span><span class="p">);</span>
+</pre></div>
+
+
+<h2 id="_3">当前地图</h2>
+<p>在定位和导航之前需要先设置一张地图</p>
+<ul>
+<li>获取当前地图</li>
+</ul>
+<div class="codehilite"><pre><span></span>  <span class="n">Promise</span><span class="o">&lt;</span><span class="n">NavMap</span><span class="p">,</span> <span class="n">NavMapException</span><span class="o">&gt;</span> <span class="n">currentNavMapPromise</span> <span class="o">=</span> <span class="n">navigationManager</span><span class="p">.</span><span class="na">getCurrentNavMap</span><span class="p">();</span>
+</pre></div>
+
+
+<ul>
+<li>设置当前地图</li>
+</ul>
+<div class="codehilite"><pre><span></span>  <span class="n">Promise</span><span class="o">&lt;</span><span class="n">NavMap</span><span class="p">,</span> <span class="n">NavMapException</span><span class="o">&gt;</span> <span class="n">setCurrentNavMapPromise</span> <span class="o">=</span> <span class="n">navigationManager</span><span class="p">.</span><span class="na">setCurrentNavMap</span><span class="p">(</span><span class="n">navMapId</span><span class="p">);</span>
+</pre></div>
+
+
+<ul>
+<li>移除当前地图</li>
+</ul>
+<div class="codehilite"><pre><span></span>  <span class="n">Promise</span><span class="o">&lt;</span><span class="n">NavMap</span><span class="p">,</span> <span class="n">NavMapException</span><span class="o">&gt;</span> <span class="n">unsetCurrentNavMapPromise</span> <span class="o">=</span> <span class="n">navigationManager</span><span class="p">.</span><span class="na">unsetCurrentNavMap</span><span class="p">();</span>
+</pre></div>
+
+
+<h2 id="_4">定位</h2>
+<p>机器人在导航开始之前需要确定自己在地图中的位置。</p>
+<ul>
+<li>查询定位状态</li>
+</ul>
+<div class="codehilite"><pre><span></span>  <span class="c1">//是否正在定位</span>
+  <span class="kt">boolean</span> <span class="n">locatingSelf</span> <span class="o">=</span> <span class="n">navigationManager</span><span class="p">.</span><span class="na">isLocatingSelf</span><span class="p">();</span>
+  <span class="c1">//是否已经定位成功</span>
+  <span class="kt">boolean</span> <span class="n">selfLocated</span> <span class="o">=</span> <span class="n">navigationManager</span><span class="p">.</span><span class="na">isSelfLocated</span><span class="p">();</span>
+</pre></div>
+
+
+<ul>
+<li>定位</li>
+</ul>
+<div class="codehilite"><pre><span></span>  <span class="c1">//默认定位</span>
+  <span class="n">ProgressivePromise</span><span class="o">&lt;</span><span class="n">Location</span> <span class="cm">/* [1] */</span><span class="p">,</span> <span class="n">LocatingException</span><span class="p">,</span> <span class="n">LocatingProgress</span><span class="o">&gt;</span> <span class="n">locateSelfPromise</span> <span class="o">=</span> <span class="n">navigationManager</span><span class="p">.</span><span class="na">locateSelf</span><span class="p">();</span>
+
+  <span class="c1">//使用参数定位</span>
+  <span class="n">LocatingOption</span> <span class="n">locatingOption</span> <span class="cm">/* [2] */</span><span class="o">=</span> <span class="k">new</span> <span class="n">LocatingOption</span><span class="p">.</span><span class="na">Builder</span><span class="p">()</span> 
+      <span class="p">.</span><span class="na">setNearby</span><span class="p">(</span><span class="n">location</span><span class="p">)</span>
+      <span class="p">.</span><span class="na">setTimeout</span><span class="p">(</span><span class="n">timeout</span><span class="p">)</span>
+      <span class="p">.</span><span class="na">build</span><span class="p">();</span>
+  <span class="n">ProgressivePromise</span><span class="o">&lt;</span><span class="n">Location</span><span class="p">,</span> <span class="n">LocatingException</span><span class="p">,</span> <span class="n">LocatingProgress</span><span class="o">&gt;</span> <span class="n">locateSelfPromise</span> <span class="o">=</span> <span class="n">navigationManager</span><span class="p">.</span><span class="na">locateSelf</span><span class="p">(</span><span class="n">locatingOption</span><span class="p">);</span>
+
+  <span class="c1">//取消定位</span>
+  <span class="n">locateSelfPromise</span><span class="p">.</span><span class="na">cancel</span><span class="p">();</span>
+</pre></div>
+
+
+<p><code>[1]</code> <a name="Location">Location</a> 位置数据</p>
+<table>
+<thead>
+<tr>
+<th>属性 getter</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>position</td>
+<td>x轴,y轴坐标，坐标为相对于地图原点</td>
+</tr>
+<tr>
+<td>z</td>
+<td>z轴坐标</td>
+</tr>
+<tr>
+<td>rotation</td>
+<td>朝向角度，范围为（0~360）， 角度为相对于地图初始角度</td>
+</tr>
+<tr>
+<td><code>[2]</code> <code>LocationOption</code> 定位选项，通过 <code>LocationOption.Builder</code> 构建，使用说明如下：</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>说明</th>
+<th>默认值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Buidler.setTimeout(timeout)</td>
+<td>超时时间 单位：ms</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>Buidler.setNearby(useNearby)</td>
+<td>在指定坐标附近定位</td>
+<td>默认不使用</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>获取当前位置</li>
+</ul>
+<div class="codehilite"><pre><span></span>  <span class="n">Location</span> <span class="n">currentLocation</span> <span class="o">=</span> <span class="n">navigationManager</span><span class="p">.</span><span class="na">getCurrentLocation</span><span class="p">();</span>
+</pre></div>
+
+
+<h2 id="_5">导航</h2>
+<ul>
+<li>查询导航状态</li>
+</ul>
+<div class="codehilite"><pre><span></span>  <span class="kt">boolean</span> <span class="n">navigating</span> <span class="o">=</span> <span class="n">navigationManager</span><span class="p">.</span><span class="na">isNavigating</span><span class="p">();</span>
+</pre></div>
+
+
+<ul>
+<li>开始导航</li>
+</ul>
+<div class="codehilite"><pre><span></span>  <span class="n">NavigationOption</span> <span class="n">navigationOption</span> <span class="cm">/* [1] */</span><span class="o">=</span> <span class="k">new</span> <span class="n">NavigationOption</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="n">location</span><span class="p">).</span><span class="na">build</span><span class="p">();</span> 
+  <span class="n">ProgressivePromise</span><span class="o">&lt;</span><span class="n">Void</span><span class="p">,</span> <span class="n">NavigationException</span><span class="p">,</span> <span class="n">NavigationProgress</span><span class="cm">/* [2] */</span><span class="o">&gt;</span> <span class="n">navigatePromise</span> <span class="o">=</span> <span class="n">navigationManager</span><span class="p">.</span><span class="na">navigate</span><span class="p">(</span><span class="n">navigationOption</span><span class="p">);</span>
+</pre></div>
+
+
+<p><code>[1]</code> <code>NavigationOption</code>导航选项，通过 <code>NavigationOption.Builder</code> 构建，使用说明如下：</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Builder.constructor(location)</td>
+<td>构造方法，设置导航目的地</td>
+</tr>
+<tr>
+<td>Builder.setMaxSpeed(maxSpeed)</td>
+<td>设置最大速度，m/s</td>
+</tr>
+<tr>
+<td>Builder.setRetryCount(retryCount)</td>
+<td>设置重试次数</td>
+</tr>
+<tr>
+<td>Builder.setRetryInterval(retryInterval)</td>
+<td>设置重试间隔，ms</td>
+</tr>
+<tr>
+<td>Builder.setTrackMode(trackMode)</td>
+<td>设置是否沿着轨迹导航（地图中附带轨道信息）</td>
+</tr>
+</tbody>
+</table>
+<p><code>[2]</code> <code>NavigationProgress</code>导航进度,通过<code>getLocation()</code>获取当前位置</p>
+<ul>
+<li>停止导航</li>
+</ul>
+<div class="codehilite"><pre><span></span>  <span class="n">navigatePromise</span><span class="p">.</span><span class="na">cancel</span><span class="p">();</span>
+</pre></div>
+
+
+<h2 id="_6">监听位置</h2>
+<ul>
+<li>设置位置监听</li>
+</ul>
+<div class="codehilite"><pre><span></span>    <span class="n">LocationListener</span> <span class="n">locationListener</span> <span class="o">=</span> <span class="k">new</span> <span class="n">LocationListener</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onLocationChanged</span><span class="p">(</span><span class="n">Location</span> <span class="n">location</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">//位置改变</span>
+        <span class="p">}</span>
+    <span class="p">};</span>
+    <span class="n">navigationManager</span><span class="p">.</span><span class="na">registerListener</span><span class="p">(</span><span class="n">locationListener</span><span class="p">);</span>
+</pre></div>
+
+
+<ul>
+<li>取消位置监听</li>
+</ul>
+<div class="codehilite"><pre><span></span>    <span class="n">navigationManager</span><span class="p">.</span><span class="na">unregisterListener</span><span class="p">(</span><span class="n">locationListener</span><span class="p">);</span>
+</pre></div>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="locomotion.html" title="运动服务" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                运动服务
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="sensor.html" title="传感器服务" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                传感器服务
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2020 Cruzr
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+    
+  </body>
+</html>

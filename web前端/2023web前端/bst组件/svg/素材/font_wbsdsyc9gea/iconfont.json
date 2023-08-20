@@ -1,0 +1,44 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "383629",
+      "name": "信息",
+      "font_class": "xinxi",
+      "unicode": "e623",
+      "unicode_decimal": 58915
+    },
+    {
+      "icon_id": "1183027",
+      "name": "首页",
+      "font_class": "shouye",
+      "unicode": "e65d",
+      "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "6977914",
+      "name": "新闻02",
+      "font_class": "xinwen",
+      "unicode": "e611",
+      "unicode_decimal": 58897
+    },
+    {
+      "icon_id": "10091561",
+      "name": "联系人",
+      "font_class": "lianxiren",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "24035289",
+      "name": "校园热点",
+      "font_class": "xiaoyuanredian",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    }
+  ]
+}

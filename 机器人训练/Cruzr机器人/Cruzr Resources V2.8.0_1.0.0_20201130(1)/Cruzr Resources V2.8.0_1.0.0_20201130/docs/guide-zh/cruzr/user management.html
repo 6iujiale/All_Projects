@@ -1,0 +1,1400 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+        <meta name="author" content="Cruzr Team">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>用户管理 - Cruzr 开发者文档</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#_1" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../index.html" title="Cruzr 开发者文档" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Cruzr 开发者文档
+            </span>
+            <span class="md-header-nav__topic">
+              
+                用户管理
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../index.html" title="Cruzr 开发者文档" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Cruzr 开发者文档
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../index.html" title="更新历史" class="md-nav__link">
+      更新历史
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../openplatform.html" title="Cruzr开放平台" class="md-nav__link">
+      Cruzr开放平台
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../productintroduction.html" title="Cruzr产品介绍" class="md-nav__link">
+      Cruzr产品介绍
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      技术架构
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-4">
+        技术架构
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cruzrframe.html" title="本体技术架构" class="md-nav__link">
+      本体技术架构
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cloud/cloudframe.html" title="云端技术架构" class="md-nav__link">
+      云端技术架构
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      快速入门
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        快速入门
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../adbconnect.html" title="准备工作（工作环境）" class="md-nav__link">
+      准备工作（工作环境）
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../android/tutorial/build your first app.html" title="创建机器人应用" class="md-nav__link">
+      创建机器人应用
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cloud/cloud.html" title="云端接入" class="md-nav__link">
+      云端接入
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      开发指导
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        开发指导
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../android/guide/other/async.html" title="Promise的应用" class="md-nav__link">
+      Promise的应用
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../android/tutorial/create your first skill.html" title="创建第一个技能" class="md-nav__link">
+      创建第一个技能
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../android/guide/skill.html" title="Skill" class="md-nav__link">
+      Skill
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../android/tutorial/overriding-speech-service.html" title="替换语音服务" class="md-nav__link">
+      替换语音服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      常用类说明
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        常用类说明
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../android/guide/robot-context.html" title="上下文" class="md-nav__link">
+      上下文
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../android/guide/other/serialize.html" title="序列化" class="md-nav__link">
+      序列化
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+    
+    <label class="md-nav__link" for="nav-7">
+      本体SDK接口文档
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        本体SDK接口文档
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../android/guide/system-service/overview.html" title="系统服务" class="md-nav__link">
+      系统服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
+    
+    <label class="md-nav__link" for="nav-7-2">
+      语音相关
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-2">
+        语音相关
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../android/guide/system-service/speech.html" title="语音服务" class="md-nav__link">
+      语音服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="voice-assistant.html" title="语音助手" class="md-nav__link">
+      语音助手
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../android/tutorial/recognize understand and distribute voice instructions.html" title="识别-理解-分发语音指令" class="md-nav__link">
+      识别-理解-分发语音指令
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-3" type="checkbox" id="nav-7-3">
+    
+    <label class="md-nav__link" for="nav-7-3">
+      运动相关
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-3">
+        运动相关
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../android/guide/system-service/locomotion.html" title="运动服务" class="md-nav__link">
+      运动服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../android/guide/system-service/navigation.html" title="导航服务" class="md-nav__link">
+      导航服务
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-4" type="checkbox" id="nav-7-4">
+    
+    <label class="md-nav__link" for="nav-7-4">
+      硬件能力
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-4">
+        硬件能力
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../android/guide/system-service/sensor.html" title="传感器服务" class="md-nav__link">
+      传感器服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../android/guide/system-service/servo.html" title="舵机服务" class="md-nav__link">
+      舵机服务
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../android/guide/system-service/power.html" title="电源服务" class="md-nav__link">
+      电源服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../android/guide/system-service/recharging.html" title="充电服务" class="md-nav__link">
+      充电服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        用户管理
+      </label>
+    
+    <a href="user management.html" title="用户管理" class="md-nav__link md-nav__link--active">
+      用户管理
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    用户管理
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    初始化
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    获取用户信息
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    获取本地所有的用户信息:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#faceid" class="md-nav__link">
+    根据faceId查询单个用户信息：
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    获取用户管理状态
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#groupidgroupid-groupidgroupid-groupidgroupid" class="md-nav__link">
+    当需要查询用户管理是在线状态还是离线状态时使用，如果是在线用户管理，那么会返回相应的企业号对应的GroupId，GroupId 可以提供给 视觉服务 等需要GroupId的服务使用，GroupId 是用来区分不同企业号下的人员信息，一个GroupId下不允许重复人员，不同GroupId 互不影响
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    文件解密
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    用户注册
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    当用户通过该接口注册用户时，为了维持数据一致性，用户数据状态流向是跟随用户管理的状态保持一致，当用户管理开启的是在线用户管理时，通过该接口注册的用户都是在线用户，反之录入的是离线用户，查询是是否在线可通过上述 获取用户管理状态 接口查询状态
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="visual.html" title="视觉服务" class="md-nav__link">
+      视觉服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="leisure.html" title="空闲服务" class="md-nav__link">
+      空闲服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="multimedia.html" title="多媒体服务" class="md-nav__link">
+      多媒体服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-11" type="checkbox" id="nav-7-11">
+    
+    <label class="md-nav__link" for="nav-7-11">
+      表现力相关
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-11">
+        表现力相关
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../android/guide/system-service/emotion.html" title="表情服务" class="md-nav__link">
+      表情服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../android/guide/system-service/motion.html" title="动作服务" class="md-nav__link">
+      动作服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../android/guide/system-service/orchestration.html" title="舞蹈服务" class="md-nav__link">
+      舞蹈服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../android/guide/system-service/light.html" title="灯光服务" class="md-nav__link">
+      灯光服务
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../android/guide/system-service/skillmanager.html" title="技能管理" class="md-nav__link">
+      技能管理
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../android/guide/system-service/diagnosis.html" title="诊断服务" class="md-nav__link">
+      诊断服务
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="setting.html" title="系统设置" class="md-nav__link">
+      系统设置
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      云端API接口文档
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-8">
+        云端API接口文档
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cloud/cloud interface1.html" title="查询基础信息" class="md-nav__link">
+      查询基础信息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cloud/cloud interface2.html" title="查询诊断信息" class="md-nav__link">
+      查询诊断信息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cloud/cloud interface3.html" title="查询人脸库" class="md-nav__link">
+      查询人脸库
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cloud/cloud interface4.html" title="查询活跃信息" class="md-nav__link">
+      查询活跃信息
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../cloud/cloud interface5.html" title="查询语音信息" class="md-nav__link">
+      查询语音信息
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../faq.html" title="常见问题FAQ" class="md-nav__link">
+      常见问题FAQ
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../compatibility.html" title="兼容性说明" class="md-nav__link">
+      兼容性说明
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    用户管理
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    初始化
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    获取用户信息
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    获取本地所有的用户信息:
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#faceid" class="md-nav__link">
+    根据faceId查询单个用户信息：
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    获取用户管理状态
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#groupidgroupid-groupidgroupid-groupidgroupid" class="md-nav__link">
+    当需要查询用户管理是在线状态还是离线状态时使用，如果是在线用户管理，那么会返回相应的企业号对应的GroupId，GroupId 可以提供给 视觉服务 等需要GroupId的服务使用，GroupId 是用来区分不同企业号下的人员信息，一个GroupId下不允许重复人员，不同GroupId 互不影响
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    文件解密
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    用户注册
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    当用户通过该接口注册用户时，为了维持数据一致性，用户数据状态流向是跟随用户管理的状态保持一致，当用户管理开启的是在线用户管理时，通过该接口注册的用户都是在线用户，反之录入的是离线用户，查询是是否在线可通过上述 获取用户管理状态 接口查询状态
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>用户管理</h1>
+                
+                <h3 id="_1">用户管理</h3>
+<blockquote>
+<p>用户管理分为在线用户和本地用户，在线用户以企业号为颗粒度形成一个组别，每个组别里的用户互不干扰；离线用户数据则存储在机器人本体，可在未开启在线用户时，并且无网络情况下进行使用。</p>
+<p>用户管理是否开启在线用户由CBIS推送而决定的，在用户管理第一次启动时会主动请求查询是否开启的状态。在线和离线必须二选一，数据不互通</p>
+<p>查询用户信息时可分为查询在线用户信息和离线用户信息</p>
+<ul>
+<li>查询在线用户信息，需要提供人脸图片或者人脸特征值，通过视觉服务进行人脸识别，识别完成后即可返回在线用户的信息，详情请参考 <a>视觉服务</a>人脸识别接口</li>
+<li>查询离线用户信息，调用下述<code>getUsers</code>和<code>getUserByFaceId</code>接口返回用户信息 ，当调用<code>getUserByFaceId</code>查询单个用户信息时需要faceId，faceId由<a>视觉服务</a>生成，查询信息前应先调用<code>视觉服务</code>的人脸识别接口，拿到faceId后再调用<code>getUserByFaceId</code>方法查询单个用户信息</li>
+</ul>
+</blockquote>
+<h4 id="_2">初始化</h4>
+<ul>
+<li>用户管理访问代理对象，使用前如下进行初始化UserManager对象：</li>
+</ul>
+<div class="codehilite"><pre><span></span><span class="n">UserManager</span> <span class="n">userManager</span><span class="o">=</span><span class="n">UserManager</span><span class="p">.</span><span class="na">getInstance</span><span class="p">(</span><span class="k">this</span><span class="p">);</span>
+</pre></div>
+
+
+<h4 id="_3">获取用户信息</h4>
+<blockquote>
+<ul>
+<li>
+<h6 id="_4">获取本地所有的用户信息:</h6>
+</li>
+</ul>
+<p><code>java
+  userManager.getUsers(new UserListenrAbstract/*[1]*/(){
+      @Override
+      public void getUsers(List&lt;User&gt; users/*[2]*/) {
+      }
+   });</code></p>
+<p><code>[1]</code> <code>UserListenrAbstract</code> 是实现了 <code>UserManagerListenr</code> 接口的抽象类，需要用到哪个回调重写那一个方法即可</p>
+<p><code>UserManagerListenr</code> 接口方法如下：</p>
+<p><code>java
+  public interface UserManagerListenr {
+      //获取本地所有的用户信息
+      void getUsers(List&lt;User&gt; users);
+      //根据faceId获取一个本地用户信息
+      void getUserByFaceId(User user);
+      //查询用户管理状态 
+      void getStatus(UserStatus status);
+  }</code></p>
+<p><code>[2]</code> <code>users</code> 是查询到的本地所有用户的信息集合，User实体属性如下: </p>
+<p><code>java
+  public class User {
+      private Long id;   //用户id
+      private String uuid;   //用户UUID
+      private String faceId;   //用户的faceId，用于识别使用
+      private String name;   //用户姓名
+      private String title;   //称谓
+      private int gender;   //用户性别 0:女  1：男  2：保密
+      private List&lt;Face&gt; faces;  //人脸信息 [一个人可有多张头像，每张头像对应的信息]
+      private String registerFacePath;  //用于注册用户的图片路径
+  }</code></p>
+<p><code>Face</code> 属性如下: </p>
+<p><code>java
+  public class Face {
+        private Long id;   //id
+        private String faceId;   //对应User的faceId
+        private String path;   //图片地址
+  }</code></p>
+<p><font color="red">注：path 图片地址是一个图片加密后的文件，需要解密后才能使用，解密方式请查看下方<a><code>文件解密</code></a>方法</font ></p>
+<ul>
+<li>
+<h6 id="faceid">根据faceId查询单个用户信息：</h6>
+</li>
+</ul>
+<p><code>java
+userManager.getUserByFaceId/*[1]*/(mFaceId ,new UserListenrAbstract(){
+      @Override
+      public void getUserByFaceId(User user/*[2]*/) {
+          super.getUserByFaceId(user);
+        Log.d("MainActivity","user:"+user);
+      }
+ });</code></p>
+<p><code>[1]</code> <code>getUserByFaceId(String mFaceId,UserManagerListenr listenr)</code>方法参数说明：</p>
+<table>
+<thead>
+<tr>
+<th align="left">参数</th>
+<th align="center">类型</th>
+<th align="right">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">mFaceId</td>
+<td align="center">String</td>
+<td align="right">用户对应的faceId(每个用户都只对应一个faceId，faceId由录入用户时 <a>视觉服务</a> 生成，因此需要使用该接口时，因先调用 <a>视觉服务</a> 的人脸识别接口，拿到faceId)</td>
+</tr>
+<tr>
+<td align="left">listenr</td>
+<td align="center">UserManagerListenr</td>
+<td align="right">回调监听，参考 <a> 获取本地所有的用户信息</a> 说明</td>
+</tr>
+</tbody>
+</table>
+<p><code>[2]</code> <code>根据条件查询到的一个本地用户信息，User实体属性请参考:</code>   <a> 获取本地所有的用户信息</a> 实体说明</p>
+</blockquote>
+<h4 id="_5">获取用户管理状态</h4>
+<h6 id="groupidgroupid-groupidgroupid-groupidgroupid">当需要查询用户管理是在线状态还是离线状态时使用，如果是在线用户管理，那么会返回相应的企业号对应的<code>GroupId</code>，<code>GroupId</code> 可以提供给 <code>视觉服务</code> 等需要GroupId的服务使用，<code>GroupId</code> 是用来区分不同企业号下的人员信息，一个GroupId下不允许重复人员，不同GroupId 互不影响</h6>
+<blockquote>
+<p><code>java
+ userManager.getStatus(new UserListenrAbstract(){
+    @Override
+    public void getStatus(UserStatus status/*[1]*/) {
+    }
+ });</code></p>
+<p><code>[1]</code> <code>status</code> 是查询到用户管理的状态(在线/离线)，以及在线时对应的groupId，具体UserStatus实体属性如下: </p>
+<p><code>java
+public class UserStatus{
+    private Boolean open;//是否是开启在线用户管理 true:开启在线用户状态 false:未开启在线用户状态
+    private String groupId;  //如果是开启在线用户管理，那么会返回相应的groupId; 否则该字段为null
+}</code>
+</p>
+</blockquote>
+<h4 id="_6">文件解密</h4>
+<blockquote>
+<p><code>java
+InputStream inputStream /*[1]*/=userManager.decryptInputStream(String encryptFilePath/*[2]*/);</code></p>
+<p><code>[1]</code> <code>[inputStream]</code> 是加密文件解密后的输入流，可以拿该流生成相应的文件，如果是加密图片路径，那么该流可以直接转Bitmap加载图片：</p>
+<p><code>java
+InputStream decryptInputStream=userManager.decryptInputStream(encryptFilePath);
+Bitmap bitmap = BitmapFactory.decodeStream(decryptInputStream);
+ImageView imageView = findViewById(R.id.img);
+imageView.setImageBitmap(bitmap);</code></p>
+<p><code>[2]</code> <code>encryptFilePath</code> 是加密文件地址，例如上述<a>Face</a> 实体中的<code>path</code>属性</p>
+</blockquote>
+<h4 id="_7">用户注册</h4>
+<h6 id="_8">当用户通过该接口注册用户时，为了维持数据一致性，用户数据状态流向是跟随用户管理的状态保持一致，当用户管理开启的是在线用户管理时，通过该接口注册的用户都是在线用户，反之录入的是离线用户，查询是是否在线可通过上述 <code>获取用户管理状态</code> 接口查询状态</h6>
+<blockquote>
+<p><code>java
+userManager.registerUser(user /*[1]*/,UserListenrAbstract(){
+@Override
+  public void register(int code /*[2]*/, String msg/*[3]*/) {
+  }
+});</code></p>
+<p><code>[1]</code> <code>user</code> 与上述User内容一致，构造方式如下：</p>
+<p><code>java
+User user = new User.UserBuilder("Cruzr" /*姓名*/, "/storage/emulated/0/Pictures/test2.png" /*图片地址*/) //姓名、图片地址是必填项 
+  .gender(0)
+  .title("title")
+  .build();</code></p>
+<p><code>[2]</code> <code>code：</code> </p>
+<p><code>java
+SUCCESS = 0; //入库成功 或 查询到该用户信息
+FAILED_CODE = -1; //视觉服务断开连接
+INSERT_FAILED_CODE = -2;  //数据库入库失败
+INSERT_VISUAL_FAILED_CODE = -3;  //视觉服务特征值入库失败
+INTERRUPT_FAILED_CODE = -4;   //被下一个请求打断</code></p>
+<p><code>[3]</code> <code>msg:</code> 当code不等于0时，msg表示错误信息，当code=0时，msg为success 或 用户信息的json数据</p>
+<p>注：更多视觉相关code可查看视觉服务里相应的code</p>
+</blockquote>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../android/guide/system-service/recharging.html" title="充电服务" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                充电服务
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="visual.html" title="视觉服务" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                视觉服务
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2020 Cruzr
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:".."}})</script>
+      
+    
+  </body>
+</html>

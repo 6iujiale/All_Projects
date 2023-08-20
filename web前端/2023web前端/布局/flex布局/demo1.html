@@ -1,0 +1,55 @@
+<!-- 
+固定布局和百分比布局
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body>*{
+            /* width: 980px;*/
+            width: 95%;
+            height: auto; 
+            /*根据块内内容自动调节高度（高度自然撑开） */
+            margin: 0 auto;
+            margin-top: 10px;
+            border: 1px solid #000;
+            padding: 5px;
+        }
+        header{
+            height: 50px;
+        }
+        section{
+            height: 300px;
+        }
+        footer{
+            height: 30px;
+        }
+        section>*{
+            height: 100%;
+            border: 1px solid #000;
+            float: left;
+        }
+        aside{
+            width: 250px;
+        }
+        article{
+            width: 700px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>header</header>
+    <nav>nav</nav>
+    <section>
+        <aside>aside</aside>
+        <article>article</article>
+    </section>
+    <footer></footer>
+</body>
+</html>

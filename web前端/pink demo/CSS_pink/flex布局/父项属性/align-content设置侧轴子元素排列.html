@@ -1,0 +1,69 @@
+<!--
+flex父项常见属性
+    flex-direction       决定主轴方向
+        row              默认值从左到右
+        row-reverse      从右到左   
+        column           从上到下 
+        column-reverse   从下到上
+
+    justify-content      设置主轴上的子元素排列方式
+        flex-start       默认从头部开始 如果主轴点是x轴,则从左到右
+        flex-end         从尾部开始排列
+        center           再主轴居中对齐
+        space-around     平分剩余空间
+        space-between    先两边贴边 再平分剩余空间(重要)
+
+    flex-wrap            设置子元素是否换行
+        nowrap           默认值,不换行
+        wrap             换行
+
+    align-items         设置侧轴上的子元素排列方式(单行)
+        flex-start      默认值，从上到下
+        flex-end        从下到上
+        center          挤在一起居中(垂直居中)
+        stretch         拉伸
+    
+    align-content       设置侧轴上的子元素的排列方式(多行)
+        flex-start      默认值在侧轴的头部开始排列
+        flex-ed         尾部开始排列
+        center          在侧轴中间显示
+        space-around    子项在侧轴平分剩余空间
+        space-between   子项在侧轴先分布在两头，再平分剩余空间
+        stretch         设置子项元素高度平分父元素高度
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 800px;
+            height: 400px;
+            background-color: pink;
+            display: flex;
+            /* 换行 */
+            flex-wrap: wrap;
+            align-content: flex-start;
+        }
+        div span{
+            width: 150px;
+            height: 100px;
+            background-color: skyblue;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+    </div>
+</body>
+</html>

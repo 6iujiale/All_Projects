@@ -1,0 +1,22 @@
+/* body{
+    background-color: @color;
+} */
+div {
+  color: pink;
+  font-size: 12px;
+}
+.header {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+}
+.header a {
+  color: red;
+  font-size: 12px;
+}
+.box a {
+  color: red;
+}
+.box a:hover {
+  background-color: skyblue;
+}

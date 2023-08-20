@@ -1,0 +1,39 @@
+<!--
+伪元素选择器
+    利用CSS新建标签，简化HTML结构。
+    ::befor{
+        content：'';
+    }
+    ::after{
+        content：'';
+    }
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>伪元素选择器</title>
+    <style>
+        div{
+            height: 300px;
+            width: 350px;
+            background-color: pink;
+            font-size: 18px;
+        }
+        div::before{
+            content: '我';
+        }
+
+        div::after{
+            content: "个大天才——ljl哈哈哈(自恋+100)";
+        }
+
+    </style>
+</head>
+<body>
+    <div>是</div>
+</body>
+</html>

@@ -1,0 +1,1428 @@
+
+
+
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
+      
+      
+      
+        <meta name="author" content="Cruzr Team">
+      
+      
+        <meta name="lang:clipboard.copy" content="Copy to clipboard">
+      
+        <meta name="lang:clipboard.copied" content="Copied to clipboard">
+      
+        <meta name="lang:search.language" content="en">
+      
+        <meta name="lang:search.pipeline.stopwords" content="True">
+      
+        <meta name="lang:search.pipeline.trimmer" content="True">
+      
+        <meta name="lang:search.result.none" content="No matching documents">
+      
+        <meta name="lang:search.result.one" content="1 matching document">
+      
+        <meta name="lang:search.result.other" content="# matching documents">
+      
+        <meta name="lang:search.tokenizer" content="[\s\-]+">
+      
+      <link rel="shortcut icon" href="../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.0.4, mkdocs-material-4.6.0">
+    
+    
+      
+        <title>Servo service - Cruzr Developer documentation</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../assets/stylesheets/application.1b62728e.css">
+      
+      
+    
+    
+      <script src="../../../assets/javascripts/modernizr.268332fc.js"></script>
+    
+    
+      
+        <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700%7CRoboto+Mono&display=fallback">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+    
+    <link rel="stylesheet" href="../../../assets/fonts/material-icons.css">
+    
+    
+    
+      
+    
+    
+  </head>
+  
+    <body dir="ltr">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
+    
+      <a href="#servo-service" tabindex="1" class="md-skip">
+        Skip to content
+      </a>
+    
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href="../../../index.html" title="Cruzr Developer documentation" class="md-header-nav__button md-logo">
+          
+            <i class="md-icon"></i>
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="__drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
+          
+            <span class="md-header-nav__topic">
+              Cruzr Developer documentation
+            </span>
+            <span class="md-header-nav__topic">
+              
+                Servo service
+              
+            </span>
+          
+        </div>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="__search"></label>
+          
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query" data-md-state="active">
+      <label class="md-icon md-search__icon" for="__search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset" tabindex="-1">
+        &#xE5CD;
+      </button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+        
+      
+      
+      <main class="md-main" role="main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="__drawer">
+    <a href="../../../index.html" title="Cruzr Developer documentation" class="md-nav__button md-logo">
+      
+        <i class="md-icon"></i>
+      
+    </a>
+    Cruzr Developer documentation
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../index.html" title="Update history" class="md-nav__link">
+      Update history
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../openplatform.html" title="Cruzr open platform" class="md-nav__link">
+      Cruzr open platform
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../productintroduction.html" title="Cruzr product introduction" class="md-nav__link">
+      Cruzr product introduction
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../cruzrframe.html" title="Technical framework" class="md-nav__link">
+      Technical framework
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      QuickStart
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-5">
+        QuickStart
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../adbconnect.html" title="Preparatory work（environment）" class="md-nav__link">
+      Preparatory work（environment）
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorial/build your first app.html" title="Build your first app" class="md-nav__link">
+      Build your first app
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Guidance
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-6">
+        Guidance
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../other/async.html" title="Promise Applications" class="md-nav__link">
+      Promise Applications
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorial/create your first skill.html" title="Create your first skill" class="md-nav__link">
+      Create your first skill
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../skill.html" title="Skill" class="md-nav__link">
+      Skill
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorial/overriding-speech-service.html" title="Overriding-speech-service" class="md-nav__link">
+      Overriding-speech-service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6-5" type="checkbox" id="nav-6-5">
+    
+    <label class="md-nav__link" for="nav-6-5">
+      Commonly used class
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-6-5">
+        Commonly used class
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../robot-context.html" title="Context" class="md-nav__link">
+      Context
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../other/serialize.html" title="Serialization" class="md-nav__link">
+      Serialization
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+    
+    <label class="md-nav__link" for="nav-7">
+      SDK documentation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="1">
+      <label class="md-nav__title" for="nav-7">
+        SDK documentation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="overview.html" title="System-service" class="md-nav__link">
+      System-service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-2" type="checkbox" id="nav-7-2">
+    
+    <label class="md-nav__link" for="nav-7-2">
+      Speech
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-2">
+        Speech
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="speech.html" title="Speech service" class="md-nav__link">
+      Speech service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cruzr/voice-assistant.html" title="Voice-assistant" class="md-nav__link">
+      Voice-assistant
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../tutorial/recognize understand and distribute voice instructions.html" title="Recognize understand and distribute voice instructions" class="md-nav__link">
+      Recognize understand and distribute voice instructions
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-3" type="checkbox" id="nav-7-3">
+    
+    <label class="md-nav__link" for="nav-7-3">
+      Locomotion
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-3">
+        Locomotion
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="locomotion.html" title="Locomotion control service" class="md-nav__link">
+      Locomotion control service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="navigation.html" title="Navigation service" class="md-nav__link">
+      Navigation service
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-4" type="checkbox" id="nav-7-4" checked>
+    
+    <label class="md-nav__link" for="nav-7-4">
+      Hardware
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-4">
+        Hardware
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="sensor.html" title="Sensor service" class="md-nav__link">
+      Sensor service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Servo service
+      </label>
+    
+    <a href="servo.html" title="Servo service" class="md-nav__link md-nav__link--active">
+      Servo service
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#obtain-servo-list" class="md-nav__link">
+    Obtain servo list
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#turn-the-servo" class="md-nav__link">
+    Turn the servo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#release-servo" class="md-nav__link">
+    Release servo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#servo-monitoring" class="md-nav__link">
+    Servo monitoring
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#angle-of-the-head-it-provides-a-suggested-value-in-comparison-to-the-height" class="md-nav__link">
+    Angle of the head, it provides a suggested value in comparison to the height
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#servo-images" class="md-nav__link">
+    Servo images
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="power.html" title="Power service" class="md-nav__link">
+      Power service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="recharging.html" title="Recharging service" class="md-nav__link">
+      Recharging service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cruzr/user management.html" title="User management" class="md-nav__link">
+      User management
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cruzr/visual.html" title="Visual service" class="md-nav__link">
+      Visual service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cruzr/leisure.html" title="Leisure service" class="md-nav__link">
+      Leisure service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cruzr/multimedia.html" title="Multimedia service" class="md-nav__link">
+      Multimedia service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7-11" type="checkbox" id="nav-7-11">
+    
+    <label class="md-nav__link" for="nav-7-11">
+      Expression
+    </label>
+    <nav class="md-nav" data-md-component="collapsible" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-11">
+        Expression
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="emotion.html" title="Emotion service" class="md-nav__link">
+      Emotion service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="motion.html" title="Motion control" class="md-nav__link">
+      Motion control
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="orchestration.html" title="Dance service" class="md-nav__link">
+      Dance service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="light.html" title="Lighting services" class="md-nav__link">
+      Lighting services
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="skillmanager.html" title="Skill manager" class="md-nav__link">
+      Skill manager
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="diagnosis.html" title="Diagnosis service" class="md-nav__link">
+      Diagnosis service
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../cruzr/setting.html" title="System settings" class="md-nav__link">
+      System settings
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../faq.html" title="FAQ" class="md-nav__link">
+      FAQ
+    </a>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../../../compatibility.html" title="Compatibility" class="md-nav__link">
+      Compatibility
+    </a>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#obtain-servo-list" class="md-nav__link">
+    Obtain servo list
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#turn-the-servo" class="md-nav__link">
+    Turn the servo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#release-servo" class="md-nav__link">
+    Release servo
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#servo-monitoring" class="md-nav__link">
+    Servo monitoring
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#angle-of-the-head-it-provides-a-suggested-value-in-comparison-to-the-height" class="md-nav__link">
+    Angle of the head, it provides a suggested value in comparison to the height
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#servo-images" class="md-nav__link">
+    Servo images
+  </a>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                <h1 id="servo-service">Servo service</h1>
+<p>The servo service provides the API's ability to call the device's "joints". As the servo service access agent, <code>ServoManager</code> provides the main API of the servo service, which can be obtained through the [<code>RobotContext[</code> object.</p>
+<div class="codehilite"><pre><span></span><span class="n">ServoManager</span> <span class="n">servoManager</span> <span class="o">=</span> <span class="n">aRobotContext</span><span class="p">.</span><span class="na">getSystemService</span><span class="p">(</span><span class="n">ServoManager</span><span class="p">.</span><span class="na">SERVICE</span><span class="p">);</span>
+</pre></div>
+
+
+<h2 id="obtain-servo-list">Obtain servo list</h2>
+<p>To obtain the number of servos and the configuration parameters, you can use the following code:</p>
+<div class="codehilite"><pre><span></span><span class="n">List</span><span class="o">&lt;</span><span class="n">ServoDevice</span><span class="o">&gt;</span> <span class="cm">/* [1] */</span> <span class="n">servoDevices</span> <span class="o">=</span> <span class="n">servoManager</span><span class="p">.</span><span class="na">getDeviceList</span><span class="p">();</span>
+</pre></div>
+
+
+<p>[1]Servo set, <code>ServoDevice</code> is the detailed configuration parameters of the servo, including: <span id="ServoDevice"/></p>
+<table>
+<thead>
+<tr>
+<th>Attribute getter</th>
+<th>Descriptions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ServoDevice.id</td>
+<td>Servo id</td>
+</tr>
+<tr>
+<td>ServoDevice.name</td>
+<td>Servo name</td>
+</tr>
+<tr>
+<td>ServoDevice.description</td>
+<td>Servo description</td>
+</tr>
+<tr>
+<td>ServoDevice.minAngle</td>
+<td>The minimum angle it can rotate</td>
+</tr>
+<tr>
+<td>ServoDevice.maxAngle</td>
+<td>The maximum angle it can rotate</td>
+</tr>
+<tr>
+<td>ServoDevice.minSpeed</td>
+<td>Minimum speed</td>
+</tr>
+<tr>
+<td>ServoDevice.maxSpeed</td>
+<td>Maximum speed</td>
+</tr>
+<tr>
+<td>ServoDevice.defaultSpeed</td>
+<td>Default speed</td>
+</tr>
+</tbody>
+</table>
+<h2 id="turn-the-servo">Turn the servo</h2>
+<p>When the device is required to act like a human, it can be achieved by turning the servo. To rotate the servo, you can use the relative angle or absolute angle. The rotation can be a single task or a serial task, which will be introduced one by one below.</p>
+<p>When the servo is rotated using the relative angle, you can specify the angle of relative rotation only, or you can also specify the angle, speed, and duration of the relative rotation.</p>
+<p>To only specify the angle of relative rotation, you can use the following code: servo no. 1001 rotates 90 degrees.</p>
+<div class="codehilite"><pre><span></span><span class="n">promise</span> <span class="cm">/* [1] */</span> <span class="o">=</span> <span class="n">servoManager</span><span class="p">.</span><span class="na">rotateBy</span><span class="p">(</span><span class="s">&quot;1001&quot;</span><span class="p">,</span> <span class="mi">90</span><span class="n">f</span><span class="p">)</span>
+    <span class="p">.</span><span class="na">progress</span><span class="p">(</span><span class="k">new</span> <span class="n">ProgressCallback</span><span class="o">&lt;</span><span class="n">RotationProgress</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onProgress</span><span class="p">(</span><span class="n">RotationProgress</span> <span class="n">rotationProgress</span> <span class="cm">/* [2] */</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// Callback the servo&#39;s rotation process</span>
+        <span class="p">}</span>
+    <span class="p">}).</span><span class="na">done</span><span class="p">(</span><span class="k">new</span> <span class="n">DoneCallback</span><span class="o">&lt;</span><span class="n">Void</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onDone</span><span class="p">(</span><span class="n">Void</span> <span class="n">aVoid</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// Callback the servo rotation accomplishment</span>
+        <span class="p">}</span>
+    <span class="p">}).</span><span class="na">fail</span><span class="p">(</span><span class="k">new</span> <span class="n">FailCallback</span><span class="o">&lt;</span><span class="n">ServoException</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nd">@Override</span>
+        <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onFail</span><span class="p">(</span><span class="n">ServoException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+            <span class="c1">// Callback the servo rotation wrong</span>
+        <span class="p">}</span>
+    <span class="p">});</span>
+</pre></div>
+
+
+<p>[1]Return the asynchronous object that is waiting for the rotation progress and results, through which you can wait for or monitor the progress and results, and cancel the rotation process. See <a href="../other/async.html"><code>Promise</code></a> for specific usage.</p>
+<p>[2] TheRotationProgress object of the asynchronous callback describes the progress information of the servo rotation, including: <span id="RotationProgress"/></p>
+<table>
+<thead>
+<tr>
+<th>Attribute getter</th>
+<th>Descriptions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>RotationProgress.sessionId</td>
+<td>Servo id</td>
+</tr>
+<tr>
+<td>RotationProgress.angle</td>
+<td>The current angle of rotation</td>
+</tr>
+</tbody>
+</table>
+<p>Specify the angle and speed of relative rotation using the following code: servo no.1001 rotates 90 degrees at a speed of 10 degrees per second.</p>
+<div class="codehilite"><pre><span></span><span class="n">promise</span> <span class="o">=</span> <span class="n">servoManager</span><span class="p">.</span><span class="na">rotateBy</span><span class="p">(</span><span class="s">&quot;1001&quot;</span><span class="p">,</span> <span class="mi">90</span><span class="n">f</span><span class="p">,</span> <span class="mi">10</span><span class="n">f</span><span class="p">);</span>
+</pre></div>
+
+
+<p>Specify the angle and duration of relative rotation through the following code: servo no.1001 rotates 90 degrees within 10 seconds.</p>
+<div class="codehilite"><pre><span></span><span class="n">promise</span> <span class="o">=</span> <span class="n">servoManager</span><span class="p">.</span><span class="na">rotateBy</span><span class="p">(</span><span class="s">&quot;1001&quot;</span><span class="p">,</span> <span class="mi">90</span><span class="n">f</span><span class="p">,</span> <span class="mi">10000</span><span class="p">);</span>
+</pre></div>
+
+
+<p>When the servo uses absolute angle rotation, you can just specify the angle of absolute rotation, or also the angle, speed, and duration of absolute rotation.</p>
+<p>To only specify the angle of relative rotation, you can use the following code: servo no.1001 rotates to the position of 90 degrees.</p>
+<div class="codehilite"><pre><span></span><span class="n">promise</span> <span class="o">=</span> <span class="n">servoManager</span><span class="p">.</span><span class="na">rotateTo</span><span class="p">(</span><span class="s">&quot;1001&quot;</span><span class="p">,</span> <span class="mi">90</span><span class="n">f</span><span class="p">);</span>
+</pre></div>
+
+
+<p>Specify the angle and speed of absolute rotation through the following code: servo no.1001 rotates 90 degrees at a speed of 10 degrees per second.</p>
+<div class="codehilite"><pre><span></span><span class="n">promise</span> <span class="o">=</span> <span class="n">servoManager</span><span class="p">.</span><span class="na">rotateTo</span><span class="p">(</span><span class="s">&quot;1001&quot;</span><span class="p">,</span> <span class="mi">90</span><span class="n">f</span><span class="p">,</span> <span class="mi">10</span><span class="n">f</span><span class="p">);</span>
+</pre></div>
+
+
+<p>Specify the angle and duration of absolute rotation through the following code: servo no.1001 rotates 90 degrees within 10 seconds.</p>
+<div class="codehilite"><pre><span></span><span class="n">promise</span> <span class="o">=</span> <span class="n">servoManager</span><span class="p">.</span><span class="na">rotateTo</span><span class="p">(</span><span class="s">&quot;1001&quot;</span><span class="p">,</span> <span class="mi">90</span><span class="n">f</span><span class="p">,</span> <span class="mi">10000</span><span class="p">);</span>
+</pre></div>
+
+
+<p>Specify a rotation option to adjust the action of the servo executing a single task.</p>
+<p>For example: servo no.1001 will rotate to 90 degrees after 10 seconds.</p>
+<div class="codehilite"><pre><span></span><span class="n">RotationOption</span> <span class="cm">/* [1] */</span> <span class="n">option</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RotationOption</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="s">&quot;1001&quot;</span><span class="p">)</span>
+    <span class="p">.</span><span class="na">setAngleAbsolute</span><span class="p">(</span><span class="kc">true</span><span class="p">).</span><span class="na">setAngle</span><span class="p">(</span><span class="mi">90</span><span class="n">f</span><span class="p">).</span><span class="na">setDuration</span><span class="p">(</span><span class="mi">10000</span><span class="p">).</span><span class="na">build</span><span class="p">();</span>
+<span class="n">promise</span> <span class="o">=</span> <span class="n">servoManager</span><span class="p">.</span><span class="na">rotate</span><span class="p">(</span><span class="n">option</span><span class="p">);</span>
+</pre></div>
+
+
+<p>[1] The <code>RotationOption</code> object is constructed by <code>RotationOption.Builder</code>, and the instructions are as follows:</p>
+<table>
+<thead>
+<tr>
+<th>Methods</th>
+<th>Descriptions</th>
+<th>Default value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Builder.constructor(servoId)</td>
+<td>Specify the servo id when constructing</td>
+<td></td>
+</tr>
+<tr>
+<td>Builder.setServoId(servoId)</td>
+<td>Servo id</td>
+<td>Zero-length string</td>
+</tr>
+<tr>
+<td>Builder.setAngle(angle)</td>
+<td>angle</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Builder.setAngleAbsolute(angleAbsolute)</td>
+<td>Identifier of the rotation method</td>
+<td>Relative angle rotation</td>
+</tr>
+<tr>
+<td>Builder.setDuration(duration)</td>
+<td>Duration of rotation, unit: millisecond</td>
+<td>0</td>
+</tr>
+<tr>
+<td>Builder.setSpeed(speed)</td>
+<td>Speed, unit: degrees per second<br/> If there are both duration and speed, the priority will be given to speed</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Specify multiple rotation options to adjust the action of the servo's execution of serial tasks. The following two implementation methods are available.</p>
+<p>For example: servo no.1001 will rotate to the position of 90 degree after 10 seconds, and it will take another 10 seconds to rotate 360 degrees.</p>
+<div class="codehilite"><pre><span></span><span class="c1">// Method 1</span>
+<span class="n">RotationOption</span> <span class="n">option1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RotationOption</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="s">&quot;1001&quot;</span><span class="p">)</span>
+    <span class="p">.</span><span class="na">setAngleAbsolute</span><span class="p">(</span><span class="kc">true</span><span class="p">).</span><span class="na">setAngle</span><span class="p">(</span><span class="mi">90</span><span class="n">f</span><span class="p">).</span><span class="na">setDuration</span><span class="p">(</span><span class="mi">10000</span><span class="p">).</span><span class="na">build</span><span class="p">();</span>
+<span class="n">RotationOption</span> <span class="n">option2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RotationOption</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="s">&quot;1001&quot;</span><span class="p">)</span>
+    <span class="p">.</span><span class="na">setAngle</span><span class="p">(</span><span class="mi">360</span><span class="n">f</span><span class="p">).</span><span class="na">setDuration</span><span class="p">(</span><span class="mi">10000</span><span class="p">).</span><span class="na">build</span><span class="p">();</span>
+<span class="n">promise</span> <span class="o">=</span> <span class="n">servoManager</span><span class="p">.</span><span class="na">rotateSerially</span><span class="p">(</span><span class="n">option1</span><span class="p">,</span> <span class="n">option2</span><span class="p">);</span>
+
+<span class="c1">// Method 2</span>
+<span class="n">option1</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RotationOption</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="s">&quot;1001&quot;</span><span class="p">)</span>
+    <span class="p">.</span><span class="na">setAngleAbsolute</span><span class="p">(</span><span class="kc">true</span><span class="p">).</span><span class="na">setAngle</span><span class="p">(</span><span class="mi">90</span><span class="n">f</span><span class="p">).</span><span class="na">setDuration</span><span class="p">(</span><span class="mi">10000</span><span class="p">).</span><span class="na">build</span><span class="p">();</span>
+<span class="n">option2</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RotationOption</span><span class="p">.</span><span class="na">Builder</span><span class="p">(</span><span class="s">&quot;1001&quot;</span><span class="p">).</span><span class="na">setAngle</span><span class="p">(</span><span class="mi">360</span><span class="n">f</span><span class="p">).</span><span class="na">setDuration</span><span class="p">(</span><span class="mi">10000</span><span class="p">).</span><span class="na">build</span><span class="p">();</span>
+<span class="n">List</span><span class="o">&lt;</span><span class="n">RotationOption</span><span class="o">&gt;</span> <span class="n">optionList</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="n">optionList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">option1</span><span class="p">);</span>
+<span class="n">optionList</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="n">option2</span><span class="p">);</span>
+<span class="n">promise</span> <span class="o">=</span> <span class="n">servoManager</span><span class="p">.</span><span class="na">rotateSerially</span><span class="p">(</span><span class="n">optionList</span><span class="p">);</span>
+</pre></div>
+
+
+<p>If you want to know if the servo is rotating currently, use the following code.</p>
+<div class="codehilite"><pre><span></span><span class="kt">boolean</span> <span class="n">isRotating</span> <span class="o">=</span> <span class="n">servoManager</span><span class="p">.</span><span class="na">servoManager</span><span class="p">(</span><span class="s">&quot;1001&quot;</span><span class="p">);</span>
+</pre></div>
+
+
+<p>If <code>true</code> is returned, it means that servo no.1001 is currently rotating.</p>
+<p>If you want to obtain the current angle of the servo, use the following code.</p>
+<div class="codehilite"><pre><span></span><span class="kt">float</span> <span class="n">angle</span> <span class="o">=</span> <span class="n">servoManager</span><span class="p">.</span><span class="na">getAngle</span><span class="p">(</span><span class="s">&quot;1001&quot;</span><span class="p">);</span>
+</pre></div>
+
+
+<h2 id="release-servo">Release servo</h2>
+<p>When you need to calibrate the angle of the servo, you need to call the API that releases the servo first, so that the upper layer can no longer access the agent object <code>ServoManager</code> to control the servo during the process of calibration.</p>
+<p>When releasing, you can specify one servo or multiple servos, which will be introduced one by one below.</p>
+<p>Release one: release servo no.1001.</p>
+<div class="codehilite"><pre><span></span><span class="n">promise</span> <span class="cm">/* [1] */</span> <span class="o">=</span> <span class="n">servoManager</span><span class="p">.</span><span class="na">release</span><span class="p">(</span><span class="s">&quot;1001&quot;</span><span class="p">).</span><span class="na">done</span><span class="p">(</span><span class="k">new</span> <span class="n">DoneCallback</span><span class="o">&lt;</span><span class="n">Void</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onDone</span><span class="p">(</span><span class="n">Void</span> <span class="n">aVoid</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Callback when servo no.1001 is released, you can start calibratiing</span>
+    <span class="p">}</span>
+<span class="p">}).</span><span class="na">fail</span><span class="p">(</span><span class="k">new</span> <span class="n">FailCallback</span><span class="o">&lt;</span><span class="n">ServoException</span><span class="o">&gt;</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onFail</span><span class="p">(</span><span class="n">ServoException</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Callback the releasing goes wrong</span>
+    <span class="p">}</span>
+<span class="p">});</span>
+</pre></div>
+
+
+<p><code>[1] Return the asynchronous object that is waiting for the result of releasing, through which you can wait for the result and cancel the release process. See [</code>Promise<code>](../other/async.md) for specific usage.</code></p>
+<p>To release multiple servos at the same time, it can be achieved by the following two methods.</p>
+<div class="codehilite"><pre><span></span><span class="n">promise</span> <span class="o">=</span> <span class="n">servoManager</span><span class="p">.</span><span class="na">release</span><span class="p">(</span><span class="s">&quot;1001&quot;</span><span class="p">,</span> <span class="s">&quot;1002&quot;</span><span class="p">);</span>
+</pre></div>
+
+
+<div class="codehilite"><pre><span></span><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">servoIds</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="n">servoIds</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;1001&quot;</span><span class="p">);</span>
+<span class="n">servoIds</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;1002&quot;</span><span class="p">);</span>
+<span class="n">promise</span> <span class="o">=</span> <span class="n">servoManager</span><span class="p">.</span><span class="na">release</span><span class="p">(</span><span class="n">servoIds</span><span class="p">);</span>
+</pre></div>
+
+
+<p>If you want to know if the servo is released, use the following code.</p>
+<div class="codehilite"><pre><span></span><span class="kt">boolean</span> <span class="n">isReleased</span> <span class="o">=</span> <span class="n">servoManager</span><span class="p">.</span><span class="na">isReleased</span><span class="p">(</span><span class="s">&quot;1001&quot;</span><span class="p">);</span>
+</pre></div>
+
+
+<p>If true is returned, it means that servo no.1001 has been released.``</p>
+<h2 id="servo-monitoring">Servo monitoring</h2>
+<p>If you want to perceive the rotation of the servo, you can register a servo monitor, which is achieved using the following code.</p>
+<div class="codehilite"><pre><span></span><span class="n">RotationListener</span> <span class="n">listener</span> <span class="o">=</span> <span class="k">new</span> <span class="n">RotationListener</span><span class="p">()</span> <span class="p">{</span>
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onRotationBegan</span><span class="p">(</span><span class="n">List</span><span class="o">&lt;</span><span class="n">ServoDevice</span><span class="o">&gt;</span> <span class="n">list</span> <span class="cm">/* [1] */</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Callback the servo starts rotating</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onRotating</span><span class="p">(</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">ServoDevice</span><span class="p">,</span> <span class="n">RotationProgress</span><span class="o">&gt;</span> <span class="n">map</span> <span class="cm">/* [2] */</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Callback the servo&#39;s rotation process</span>
+    <span class="p">}</span>
+
+    <span class="nd">@Override</span>
+    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">onRotationEnded</span><span class="p">(</span><span class="n">List</span><span class="o">&lt;</span><span class="n">ServoDevice</span><span class="o">&gt;</span> <span class="n">list</span> <span class="cm">/* [3] */</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Callback the servo completes rotation</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+
+<span class="n">servoManager</span><span class="p">.</span><span class="na">registerRotationListener</span><span class="p">(</span><span class="n">listener</span><span class="p">,</span> <span class="s">&quot;1001&quot;</span><span class="p">,</span> <span class="s">&quot;1002&quot;</span>  <span class="cm">/* [4] */</span><span class="p">);</span>
+</pre></div>
+
+
+<p>[1]The set of servos that started rotation. See [ServoDevice[ for details of the servos.</p>
+<p>[2] The set of servos and their corresponding progress. For details about the progress, see [RotationProgress<a href="#RotationProgress">.</a></p>
+<p>[3] The set of servos that completed rotation</p>
+<p>[4] Both <code>1001</code> and <code>1002</code> indicate the number of servos, which can also be written as a set here, as follows:</p>
+<div class="codehilite"><pre><span></span><span class="n">List</span><span class="o">&lt;</span><span class="n">String</span><span class="o">&gt;</span> <span class="n">servoIds</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;&gt;</span><span class="p">();</span>
+<span class="n">servoIds</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;1001&quot;</span><span class="p">);</span>
+<span class="n">servoIds</span><span class="p">.</span><span class="na">add</span><span class="p">(</span><span class="s">&quot;1002&quot;</span><span class="p">);</span>
+<span class="n">servoManager</span><span class="p">.</span><span class="na">registerRotationListener</span><span class="p">(</span><span class="n">listener</span><span class="p">,</span> <span class="n">servoIds</span><span class="p">);</span>
+</pre></div>
+
+
+<p>If you don't want to perceive the rotation of the servo, use the following code:</p>
+<div class="codehilite"><pre><span></span><span class="n">servoManager</span><span class="p">.</span><span class="na">unregisterRotationListener</span><span class="p">(</span><span class="n">listener</span><span class="p">);</span>
+</pre></div>
+
+
+<h2 id="angle-of-the-head-it-provides-a-suggested-value-in-comparison-to-the-height">Angle of the head, it provides a suggested value in comparison to the height</h2>
+<p>At present, only the head servo (id: 0x0e) can be controlled, and the angle range of the head is 180 to 270 degrees. The following table shows the experience value of the angle of the head servo when users of different heights are about 50cm in front of the robot.</p>
+<table>
+<thead>
+<tr>
+<th>Height (cm)</th>
+<th>Angle (°)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>180+</td>
+<td>180</td>
+</tr>
+<tr>
+<td>165-180</td>
+<td>180-195</td>
+</tr>
+<tr>
+<td>155-165</td>
+<td>195-210</td>
+</tr>
+<tr>
+<td>145-155</td>
+<td>210-225</td>
+</tr>
+<tr>
+<td>135-145</td>
+<td>225-240</td>
+</tr>
+<tr>
+<td>125-135</td>
+<td>240-255</td>
+</tr>
+<tr>
+<td>115-125</td>
+<td>255-270</td>
+</tr>
+<tr>
+<td>&lt;115</td>
+<td>270</td>
+</tr>
+</tbody>
+</table>
+<h2 id="servo-images">Servo images</h2>
+<p>Note: The robot 1s has no waist servo 0x0d</p>
+<p><img alt="servo" src="servo.png" /></p>
+<p>Robot servo chart:</p>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>NAME</th>
+<th>Note</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0x01</td>
+<td>LShoulderPith</td>
+<td>The first servo on the left arm</td>
+</tr>
+<tr>
+<td>0x02</td>
+<td>LShoulderRoll</td>
+<td>The second servo on the left arm</td>
+</tr>
+<tr>
+<td>0x03</td>
+<td>LShoulderYaw</td>
+<td>The third servo on the left arm</td>
+</tr>
+<tr>
+<td>0x04</td>
+<td>LElbowRoll</td>
+<td>The fourth servo on the left arm</td>
+</tr>
+<tr>
+<td>0x05</td>
+<td>LElbowYaw</td>
+<td>The fifth servo on the left arm</td>
+</tr>
+<tr>
+<td>0x07</td>
+<td>RShoulderPith</td>
+<td>The first servo on the right arm</td>
+</tr>
+<tr>
+<td>0x08</td>
+<td>RShoulderRoll</td>
+<td>The second servo on the right arm</td>
+</tr>
+<tr>
+<td>0x09</td>
+<td>RShoulderYaw</td>
+<td>The third servo on the right arm</td>
+</tr>
+<tr>
+<td>0x10</td>
+<td>RHand</td>
+<td>Right hand servo</td>
+</tr>
+<tr>
+<td>0x0a</td>
+<td>RElbowRol</td>
+<td>The fourth servo on the right arm</td>
+</tr>
+<tr>
+<td>0x0b</td>
+<td>RElbowYaw</td>
+<td>The fifth servo on the right arm</td>
+</tr>
+<tr>
+<td>0x0d</td>
+<td>HeadYaw</td>
+<td>Waist servo</td>
+</tr>
+<tr>
+<td>0x0e</td>
+<td>HeadPitch</td>
+<td>Head servo</td>
+</tr>
+<tr>
+<td>0x0f</td>
+<td>LHand</td>
+<td>Left hand servo</td>
+</tr>
+</tbody>
+</table>
+                
+                  
+                
+                
+              
+              
+                
+
+
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="sensor.html" title="Sensor service" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Sensor service
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="power.html" title="Power service" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Power service
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2016 - 2020 Cruzr
+          </div>
+        
+        powered by
+        <a href="https://www.mkdocs.org">MkDocs</a>
+        and
+        <a href="https://squidfunk.github.io/mkdocs-material/">
+          Material for MkDocs</a>
+      </div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../../../assets/javascripts/application.808e90bb.js"></script>
+      
+      <script>app.initialize({version:"1.0.4",url:{base:"../../.."}})</script>
+      
+    
+  </body>
+</html>

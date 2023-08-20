@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>图片底部空白缝隙解决</title>
+    <!--
+        思路
+            1.img+vertical属性
+            2.转为块级元素 display:block;
+    -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        div {
+            border: 10px solid red;
+        }
+
+        img {
+            /* vertical-align: bottom; */
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="https://ts1.cn.mm.bing.net/th/id/R-C.3c1327495a3dae7d805b6d3cf6358705?rik=bmRPaS4Nv2xBWw&riu=http%3a%2f%2fm.keaiming.com%2fuploads%2fallimg%2f200928%2f3-20092Q11G7-50.jpg&ehk=Pq93YqjQXl6YGMD4MN3RRD5RZ%2fCrXNZx5j01io7AcxY%3d&risl=&pid=ImgRaw&r=0"
+            alt="美照">
+    </div>
+</body>
+
+</html>

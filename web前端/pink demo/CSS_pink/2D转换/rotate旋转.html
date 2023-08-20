@@ -1,0 +1,38 @@
+<!--
+rotate旋转
+    transform: rotate( deg);
+    rote里跟度数，单位是deg。
+    度数为正时，顺时针，度数为负时，为逆时针。
+    默认旋转中心点是元素的中心点。
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 200px;
+            border-radius: 50%;
+            border: 4px solid pink;
+            transition: all 1.0s;
+            /* transform-origin: left bottom; */
+        }
+        img:hover{
+            transform: rotate(-270deg);
+        }
+       
+        /* 需求
+        1. 鼠标放上转圈
+        2.添加圆形边框
+        */
+        /* transform: rotate(-45deg); */
+    </style>
+</head>
+<bod>
+    <img src="https://tse1-mm.cn.bing.net/th/id/OIP-C.prQEyWZsuxUY-ZPxXY-OmgHaHa?w=174&h=180&c=7&r=0&o=5&dpr=1.5&pid=1.7">
+    <h4>点我一下会转圈圈</h4>
+</bod>
+</html>

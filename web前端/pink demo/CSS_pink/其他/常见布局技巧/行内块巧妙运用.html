@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>页面跳转样式</title>
+    <style>
+        /*父盒子居中*/
+        .box{
+            text-align: center;
+        }
+        .box a{
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            background-color: #f7f7f7;
+            border: 1px soild #ccc;
+            text-align: center;
+            line-height: 36px;
+            text-decoration: none;
+            color: black;
+        }
+        .box .prev,
+        .box .next{
+            height: 36px;
+            width: 100px;
+        }
+        .box .current,
+        .box .elp{
+            background-color: #FFFF;
+            border: none;
+        }
+        .box input{
+            width: 45px;
+            height: 36px;
+            border: 1px soild #ccc;
+            outline: none;
+        }
+        .box button{
+            width: 60px;
+            height: 36px;
+            line-height: 36px; 
+            border: 1px soild #ccc; 
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <a href="#" class="prev">&lt;&lt;上一页</a>
+        <a href="#" class="current">1</a>
+        <a href="#">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#" class="elp">....</a>
+        <a href="#" class="next">&gt;&gt;下一页</a>共10页
+        到第<input type="text">页
+        <button>确定</button>
+    </div>
+</body>
+</html>

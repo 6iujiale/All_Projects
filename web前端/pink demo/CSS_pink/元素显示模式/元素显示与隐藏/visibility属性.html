@@ -1,0 +1,40 @@
+<!--visibility属性
+    visibility:visible;元素可视
+    visibility:hidden;元素隐藏
+visibility隐藏元素后，继续占有原来的位置。
+display隐藏元素后，不占有原来的位置。
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .baba,
+        .mama {
+            height: 200px;
+            width: 200px;
+        }
+        
+        .baba {
+            background-color: skyblue;
+            visibility: hidden;
+            /*隐藏元素*/
+            /* 占有原来的位置，哈哈太惨了吧人死了钱还在 */
+        }
+        
+        .mama {
+            background-color: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="baba">猪爸爸</div>
+    <div class="mama">猪妈妈</div>
+</body>
+
+</html>

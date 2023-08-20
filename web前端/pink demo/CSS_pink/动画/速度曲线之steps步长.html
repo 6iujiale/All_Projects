@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation-timing-function之步长属性</title>
+    <style>
+        /* 利用步长属性使盒子走10步 */
+        div{
+            width: 0px;
+            height: 30px;
+            background-color: pink;
+            animation-name: move;
+            animation-duration: 5s;
+            /* 速度曲线 */
+            animation-timing-function: steps(10);
+            /* 是否暂停动画 */
+            animation-fill-mode:forwards;
+            font-size: 20px;
+            /* 文字强制一行显示 */
+            white-space: nowrap;
+            /* overflow: hidden; */
+            
+        }
+        @keyframes move{
+            0%{
+                width: 0;
+            }
+            100%{
+                transform: translate(300px);
+                
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>成为别人高攀不起的样子</div>
+</body>
+</html>

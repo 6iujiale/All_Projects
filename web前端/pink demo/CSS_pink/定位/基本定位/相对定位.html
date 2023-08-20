@@ -1,0 +1,84 @@
+<!-- 
+定位
+    标准流或浮动都无法快速实现，此时需要定位来实现。
+    1.浮动可以让多个块级盒子一行没有缝隙排列显示，用于横向排列盒子。
+    2.定位则是可以让盒子自由的在某个盒子内移动位置或固定屏幕某个位置，并压住其他盒子。
+
+定位组成
+    将盒子定在某一个位置，所有定位是在摆放盒子，按照定位的方式移动盒子。
+    定位=定位模式+边偏移
+        定位模式：position属性设置
+            static      静态定位
+            relative    相对定位
+            absolute    绝对定位
+            fixed       固定定位
+        边偏移：定位盒子移动到最终位置
+            top     顶端
+            bottom  底部
+            left    左侧
+            right   右侧
+
+    静态定位
+        选择器{position：static；}
+    相对定位(常使用)
+        选择器{position：relative；}  
+        1.移动位置的时候参照点是自己原来的位置。
+        2.不脱标，继续保留原来位置。
+    绝对定位
+        选择器{position：absolute；} 
+        1.如果没祖先元素或祖先元素没有定位，则以浏览器为准定位。
+        2.如果祖先元素有定位，则以最近一级的有定位祖先元素为参考点移动位置。
+        3.决对定位不在占有原先的位置。(脱标)
+        子绝父相
+    固定定位
+        选择器{position：fixed；} 
+        1.以浏览器的可视窗口为参照点移动元素。
+        2.不随滚动条滚动。
+        3.固定定位不占有原先的位置。
+    固定定位也是脱标的，固定定位是特殊的绝对定位。
+    粘性定位
+        选择器{position：sticky；}
+        1.以浏览器可视窗口为参照点移动元素(固定定位特点)
+        2.粘性定位占有原先的位置(相对定位特点)
+        3.必须添加top、left、right、bottom其中一个才有效
+
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>相对定位</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+        
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(167, 14, 40);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+</body>
+
+</html>

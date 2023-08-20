@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    color: red;
+    list-style: none;
+}
+.w {
+    width: 1300px;
+    margin: 0 auto;
+}
+
+header {
+    width: 100%;
+    background-color: #05134F;
+}
+
+header .w{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    background-color: #05134F;
+}
+
+header .logo{
+    width: 500px;
+    height: 140px;
+    background-color: yellow;
+}
+
+header .nav{
+    height: 50px;
+    width: 1300px;
+    background-color: aqua;
+}
+
+.banner{
+    height: 550px;
+    background-color: pink;
+}
+
+#main_1{
+    background-color: yellow;
+    box-sizing: border-box;
+}
+
+#main_1 #news{
+    height: 400px;
+    border: 3px solid gray;
+    margin-left: -1px;
+}
+
+#main_1 #notice{
+    height: 400px;
+    border: 3px solid gray;
+}
+
+#main_2{
+    box-sizing: border-box;
+    background-color: pink;
+    
+}
+
+#main_2 #seisai_style{
+    height: 400px;
+    border: 3px solid gray;
+}
+
+#main_2 #news2{
+    height: 400px;
+    border: 3px solid gray;
+}
+
+#main_2 #business{
+    height: 400px;
+    border: 3px solid gray;
+}
+
+footer{
+    background-color: #05134F;
+    width: 100%;
+}
+
+footer .w{
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+footer .ft{
+    height: 195px;
+    width: 1300px;
+    background-color: #445dc9;
+}
+
+footer .fb{
+    height: 86px;
+    width: 1300px;
+    background-color: #1935b4;
+}
+
+

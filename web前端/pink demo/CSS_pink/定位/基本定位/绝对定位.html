@@ -1,0 +1,96 @@
+<!--
+绝对定位
+    选择器{position：absolute；} 
+    1.如果没祖先元素或祖先元素没有定位，则以浏览器为准定位。
+    2.如果祖先元素有定位，则以最近一级的有定位祖先元素为参考点移动位置。
+    3.决对定位不在占有原先的位置。(脱标)
+-->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            position: absolute;
+            /* top: 10px;
+            left: 10px; */
+            /* top: 10px;
+            right: 10px; */
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="son"></div>
+</body>
+
+</html> -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>绝对定位</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .grandpa {
+            position: relative;
+            height: 800px;
+            width: 800px;
+            background-color: rgb(53, 200, 87);
+        }
+        
+        .father {
+            position: relative;
+            height: 500px;
+            width: 500px;
+            background-color: blue;
+        }
+        
+        .son {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            position: absolute;
+            /* top: 10px;
+            left: 10px; */
+            /* top: 10px;
+            right: 10px; */
+            bottom: 0;
+            left: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="grandpa">
+        <div class="father">
+            <div class="son"></div>
+        </div>
+    </div>
+</body>
+</html>

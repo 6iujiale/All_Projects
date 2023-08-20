@@ -1,0 +1,47 @@
+<!--
+    算法：浏览器的50%(left=50%;)
+          盒子的-1/2(margin-left/top='-盒子的1/2')
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        *
+        /* 绝对定位盒子水平居中 */
+        /* .box {
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+            position: absolute;
+            left: 50%;
+            margin-left: -100px;
+        } */
+        /* *绝对定位盒子垂直居中 */
+        
+        .box {
+            height: 200px;
+            width: 200px;
+            background-color: pink;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-top: -100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+</body>
+
+</html>

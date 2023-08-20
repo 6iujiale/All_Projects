@@ -1,0 +1,56 @@
+<!--
+盒子重叠，控制盒子的前后次序(z-index)
+只有定位盒子才有z-index属性
+    选择器{z-index：1;}
+        数值可以为正整数、负数、零默认是auto，数值越大，盒子越靠上。
+        如果属性值相同，则按照书写顺序，后来居上。
+        数字后不加单位
+
+
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位的堆叠顺序</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 20px;
+            left: 0;
+        }
+        
+        .xiongda {
+            background-color: pink;
+            z-index: 3;
+            /* font-size: 30px;
+            text-align: center; */
+        }
+        
+        .xionger {
+            background-color: purple;
+            top: 50px;
+            left: 20px;
+            z-index: 2;
+        }
+        
+        .qingge {
+            background-color: blue;
+            top: 70px;
+            left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box xiongda">熊大</div>
+    <div class="box xionger">熊二</div>
+    <div class="box qingge">强哥</div>
+</body>
+
+</html>

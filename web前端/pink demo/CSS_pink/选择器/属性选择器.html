@@ -1,0 +1,53 @@
+<!--
+属性选择器
+    1.可不用借助类|id选择器
+    2.可选择属性=值的某些元素
+    3.可选属性值开头的某些元素
+    4.可选属性值结尾的某些元素
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>属性选择器</title>
+    <style>
+        /* 1.可不用借助类|id选择器 */
+        input[value]{
+           background-color: pink;
+        }
+
+        /* 2.可选择属性=值的某些元素 */
+        input[type=text]{
+            background-color: yellow;
+        }
+
+        /* 3.可选属性值开头的某些元素 */
+        /* 选择首先是div 然后具有class属性 并且属性值 必须是 icon开头的这些元素 */
+        div[class^=icon]{
+            color: green;
+        }
+        /* 4.可选属性值结尾的某些元素 */
+        section[class$=date]{
+            color: pink;
+        }        
+    </style>
+</head>
+<body>
+    <!-- 1.可不用借助类|id选择器 -->
+    <!-- <input type="text" value="请输入文本"> -->
+    <!-- 2.可选择属性=值的某些元素 -->
+    <input type="text" name="" id="">
+    <input type="password" name="" id="">
+    <!-- 3.可选属性值开头的某些元素-->
+    <div class="icon1">小图标1</div>
+    <div class="icon2">小图标2</div>
+    <div class="icon3">小图标3</div>
+    <div class="icon4">小图标4</div>
+    <!-- 4.可选属性值结尾的某些元素  -->
+    <section class="icon1-date">我是张三</section>
+    <section class="icon2-date">我是李四</section>
+    <section class="icon3-ico">那我是谁</section>
+</body>
+</html>

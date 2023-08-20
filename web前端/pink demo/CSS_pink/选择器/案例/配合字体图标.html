@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>配合字体图标</title>
+    <style>
+
+        div {
+            height: 50px;
+            width: 200px;
+            border: 2px solid red;
+        }
+        div p::after{
+            /* content属性不可少 */
+            content:'';
+            background-image: url('https://ts1.cn.mm.bing.net/th/id/R-C.0a8c58699a77a2cd5db9db225b77a5b7?rik=6Et8YQJCR6RNOA&riu=http%3a%2f%2fpic.616pic.com%2fys_img%2f00%2f16%2f40%2fsc0tRUpJaP.jpg&ehk=COGpuIVE8oMKId%2bGkSL0OPxxr2%2fXwYG7eAn%2bNFkcvIY%3d&risl=&pid=ImgRaw&r=0');
+            background-repeat: no-repeat;
+            /* 设置宽高 */
+            width: 30px;
+            height: 30px;
+            /* 转为行内块 */
+            display: inline-block;
+            /* 设置图片尺寸 */
+            background-size: 100%;
+            /* 利用定位调整位置 */
+            position: relative;
+            left: 80%;
+           	        
+    }
+
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>
+            
+        </p>
+    </div>
+</body>
+
+</html>

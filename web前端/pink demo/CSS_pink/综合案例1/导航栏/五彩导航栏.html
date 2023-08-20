@@ -1,0 +1,50 @@
+<!--
+要求
+    1.链接属于行内元素，需要宽度和高度，需要模式转换。
+    2.文字水平居中和垂直居中。
+    3.链接里面设置图片，需要用到背景的相关属性的设置。
+    4.鼠标经过变换背景图片，需要链接伪类选择器。
+笔记
+    shift+alt
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav a {
+            display: inline-block;
+            width: 120px;
+            height: 48px;
+            text-align: center;
+            line-height: 48px;
+            color: white;
+            text-decoration: none;
+            background-color: pink;
+        }
+        
+        .nav .bg1,
+        .bg2,
+        .bg3,
+        .bg4,
+        .bg5 {
+            background: url('五彩导航栏素材/348f59197124cfb251463c99e0dc877.png');
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#" class="bg1">五彩导航栏</a>
+        <a href="#" class="bg2">五彩导航栏</a>
+        <a href="#" class="bg3">五彩导航栏</a>
+        <a href="#" class="bg4">五彩导航栏</a>
+        <a href="#" class="bg5">五彩导航栏</a>
+    </div>
+</body>
+
+</html>

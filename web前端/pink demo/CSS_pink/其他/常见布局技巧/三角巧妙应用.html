@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三角巧妙应用_京东</title>
+    <style>
+        .price{
+            width: 160px;
+            height: 24px;
+            border: 1px solid red;
+            margin: 0 auto;
+            line-height: 24px;    
+            font-size: 15px;   
+                
+        }
+        .price .miaosha{
+            float: left;
+            height: 100%;
+            width: 90px;
+            background-color: red;
+            color: white;
+            font-weight: 700;
+
+        }
+        .price  i{ 
+            width: 0;
+            height: 0;
+            border-color: red transparent  transparent transparent;
+            border-style: solid;
+            border-width: 24px 20px 0 0;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="price">
+        <span class="miaosha">￥1650</span>
+        <i></i>
+        <span style=" text-decoration: line-through;font-size: 12px;color: gray;padding-left: 25px;">￥999</span>
+    </div>
+</body>
+</html>

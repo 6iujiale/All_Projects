@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    border: 5px solid gray;
+}
+
+[class*="pics"]{
+
+    margin-top: 20px;
+}
+
+[class*="pics"] img{
+    width: 100%;
+}
+
+body,ul,li,p{
+    margin: 0;
+    padding: 0;
+}
+
+#header{
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+#header .hl{
+    background-color: #abcedf;
+    color: white;
+    font-weight: bolder;
+}
+
+#header .hm{
+    background-color: rgb(188, 192, 192);
+}
+
+#header .hr{
+    background-color: rgb(136, 137, 137);
+}
+
+#footer{
+    height: 60px;
+    background-color: #abcedf;
+    text-align: center;
+    line-height: 60px;
+    color: white;
+}
+
+
+
+
+
+

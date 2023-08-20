@@ -1,0 +1,93 @@
+<!-- 
+flex布局
+    设置flex布局
+        display: flex;
+    调整主轴的方向
+        flex-direction：;[row 水平,默认];[column 垂直]
+    是否换行
+        flex-wrap: ;[nowrap 不换行,可能溢出容器,默认]；[wrap 换行];[]
+    调整主轴的对齐方式
+        justify-content: ;[flex-start];[flex-end];[center];[space-between 最左最右分布,item间距相同];[space-around]
+    调整侧轴对齐方式
+        align-items: ;[flex-start];[flex-end];[center];[baseline];[stretch 默认]
+    调整盒子次序
+        order: 数值; 数字越小越靠前
+    扩展比率
+        flex-grow: ;
+
+框架flex
+使用flex布局
+    d-flex
+元素的排列方式，水平和垂直
+    flex-row
+    flex-column
+元素的等宽设计
+    flex-fill
+剩余空间分配
+    flex-grow-数字
+元素对齐
+    justify-content 
+    align-items
+
+flex-flow复合属性
+    调整主轴方向
+    是否换行
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .box{
+            /* 子元素会按照内容的实际宽度来显示，且子元素的高度会占满父元素的可用高度 */
+            display: flex;
+            border: 1px solid #999;
+            /* height: 60px; */
+            /* 垂直显示，垂直翻转，最后一个元素显示在第一行 */
+            /* flex-flow: column-reverse; */
+            flex-direction: column;
+            padding: 4px;
+            background: #ddd;
+            /* 如果设置flex主轴方向为column，设置主轴对齐方式无效*/
+            /* justify-content: space-between; */
+            /* 设置侧轴的对齐方式 */
+            align-items: center;
+        }
+        .box>div{
+            margin: 2px;
+            padding: 2px;
+            border: 1px solid #999;
+            background: #fff;
+        }
+        /* a cderf b */
+        .box>div:nth-child(1){
+            order: 1;
+        }
+        .box>div:nth-child(2){
+            order: 3;
+        }
+        .box>div:nth-child(3){
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="a">A</div>
+        <div class="b">B</div>
+        <div class="c">CDERF</div>
+    </div>
+    <div class="box">
+        <div class="a">A</div>
+        <div class="b">B</div>
+        <div class="c">CDERF</div>
+    </div>
+</body>
+</html>

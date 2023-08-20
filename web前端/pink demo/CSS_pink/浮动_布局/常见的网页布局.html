@@ -1,0 +1,122 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .box {
+            width: 982px;
+            height: 761px;
+            background-color: pink;
+            margin: 30px auto;
+        }
+        
+        .top {
+            width: 940px;
+            height: 58px;
+            margin: 14px auto;
+            background-color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="top">top</div>
+       
+    </div>
+</body> -->
+
+</html>
+
+
+<!-- 
+box:982*761
+top:968*58  间隙：14px
+
+-->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常见网页布局</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .top {
+            height: 70px;
+            background-color: gray;
+        }
+        
+        .banner {
+            height: 150px;
+            width: 980px;
+            background-color: pink;
+            margin: 10px auto;
+        }
+        
+        li {
+            list-style: none;
+        }
+        
+        .box {
+            width: 980px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: pink;
+        }
+        
+        .box li {
+            width: 237px;
+            height: 300px;
+            float: left;
+            background-color: aliceblue;
+            margin-right: 10px;
+        }
+        
+        .box .last {
+            margin-right: 0;
+        }
+        
+        .footer {
+            height: 150px;
+            background-color: blue;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">top</div>
+    <div class="banner">banner</div>
+    <div class="box">
+        <ul>
+            <!--快速生成语法：ul>li*4{$}-->
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li class="last">4</li>
+        </ul>
+    </div>
+    <div class="footer">footer</div>
+
+</body>
+
+</html>

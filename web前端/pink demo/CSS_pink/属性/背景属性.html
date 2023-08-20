@@ -1,0 +1,218 @@
+<!--CSS笔记(3)
+    背景颜色
+        background-color:颜色;
+
+    背景图片
+        background-image:none | url('地址')  
+    
+    背景平铺
+         background-repeat:repeat | no-repeat | repeat-x | repeat-y
+         默认情况下图片平铺
+
+    背景图片位置     
+        background-position:x y;
+            参数方位名词
+                如果指定的两个值都是方位名词，前后顺序无关。
+                如果只指定一个方位名词，另一个值省略，第二个值默认居中对齐。
+
+            参数是精确单位
+                如果数值是精确坐标，那第一个x坐标，第二个人y坐标。
+                如果只指定一个数值，那该数值一定是x坐标，另一个默认垂直居中。
+
+            混合单位
+                如果指定的两个值是精确单位和方向名词混合使用，则第一个值是x值，第二个值是y值。            
+
+    背景图像滚动
+        background-attachment: scroll(滚动) | fixed(固定);     
+           
+    背景半透明
+        background: rgba(0, 0, 0, 0.8);  
+    
+    复合性写法
+        background：背景颜色 背景图片地址 背景平铺 背景滚动 背景图片位置;
+
+-->
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span {
+            display: block;
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <span></span>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 600px;
+            height: 600px;
+            background-image: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.rologo.com%2Fimages%2Fuploads%2F2019%2F01%2F2019010715533228-480x300.jpg&refer=http%3A%2F%2Fwww.rologo.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1655693329&t=e7933db5d7a453cb12eb3b35cdd978a0');
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div {
+        width: 600px;
+        height: 600px;
+        background-image: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.rologo.com%2Fimages%2Fuploads%2F2019%2F01%2F2019010715533228-480x300.jpg&refer=http%3A%2F%2Fwww.rologo.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1655693329&t=e7933db5d7a453cb12eb3b35cdd978a0');
+        background-repeat: no-repeat;
+    }
+</style>
+<body>
+    <div></div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>方位名词</title>
+</head>
+<style>
+    div {
+        width: 600px;
+        height: 600px;
+        background-image: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.rologo.com%2Fimages%2Fuploads%2F2019%2F01%2F2019010715533228-480x300.jpg&refer=http%3A%2F%2Fwww.rologo.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1655693329&t=e7933db5d7a453cb12eb3b35cdd978a0');
+        background-repeat: no-repeat;
+        background-position: center right;
+        background-color: pink;
+    }
+</style>
+<body>
+    <div></div>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div h3 {
+            width: 118px;
+            height: 40px;
+            line-height: 40px;
+            font-weight: 400;
+            font-size: 14px;
+            background-image: url('https://ossweb-img.qq.com/images/js/topfiles/ost1410/logo.png');
+            background-repeat: no-repeat;
+            background-position: left center;
+            text-indent: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>成长守护平台</h3>
+    </div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精确单位</title>
+</head>
+<style>
+    div {
+        width: 600px;
+        height: 600px;
+        background-image: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.rologo.com%2Fimages%2Fuploads%2F2019%2F01%2F2019010715533228-480x300.jpg&refer=http%3A%2F%2Fwww.rologo.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1655693329&t=e7933db5d7a453cb12eb3b35cdd978a0');
+        background-repeat: no-repeat;
+        background-color: pink;
+        /*x轴：20px,y轴：50px */
+        background-position: 20px 50px;
+        /*
+        background-position: 20px ;
+        */
+    }
+</style>
+
+<body>
+    <div></div>
+</body>
+
+</html>
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 600px;
+            width: 600px;
+            background-image: url('https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fwww.rologo.com%2Fimages%2Fuploads%2F2019%2F01%2F2019010715533228-480x300.jpg&refer=http%3A%2F%2Fwww.rologo.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1655693329&t=e7933db5d7a453cb12eb3b35cdd978a0');
+            background-repeat: no-repeat;
+            background-position: 20px center;
+            background-color: pink;
+            /*水平是居中对齐 垂直是20
+            background-position: center 20px;
+            */
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>传智头条_图片放大</title>
+    <style>
+        /* 需求
+            1.模仿传智头条
+            2.鼠标经过图片时添加2D转换效果(方法)
+        */
+        *{
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-decoration: none;
+            font-size: 13px;
+            color: black;
+            /* 设置旋转中心点为中间 */
+            transform-origin:center;
+            transition: all 0.8s;
+            overflow: hidden;
+        }
+        .headlines{
+            width: 1200px;
+            height: 350px;
+            margin: 100px auto;
+            background-color: #cccc;
+          
+        }
+
+        .headlines .AI{
+            width: 400px;
+            height: 100%;
+            float: left;
+            background-color: skyblue;
+           
+           
+        }
+        .headlines .course{
+            width: 800px;
+            height: 100%;
+            float: right;
+            
+        }
+        .headlines .course li{
+            width: 240px;
+            height: 160px;
+            float: left;
+            margin: 0 13px;
+            margin-bottom: 15px;
+            background-color: #FFFF;
+        }
+        .headlines .course li img{
+            width: 100%;
+            height: 75%;
+        }
+        div img:hover{
+            transform: scale(1.1,1.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="headlines">
+        <div class="AI">
+            <a href="#"><img src="https://ts1.cn.mm.bing.net/th/id/R-C.ec2378151893e4b05f84230b51b76adc?rik=OHP16v0Xe2VO2Q&riu=http%3a%2f%2fwww.kidscode.cn%2fUploads%2fPicture%2f2018-06-05%2f5b1665ba26cf4.jpg&ehk=pA3tmwBHeGdfzOlgilAmkpBNKEahwMGE5GYB9EfNMso%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="人工智能+python" style="width: 100%;height: 100%;"></a>
+        </div>
+        <div class="course">
+            <ul>
+                <li>
+                    <a href="#">
+                        <img src="https://ts1.cn.mm.bing.net/th/id/R-C.3562182895ed7e97e840aea6cdb55c36?rik=zDt9cIuUszBE%2fw&riu=http%3a%2f%2f10.idqqimg.com%2fqqcourse_logo_ng%2fajNVdqHZLLDFIz5bm1dwZJFrOh2Dgqic27lShXotRz2oVWUzGlicb5QLuyzJGo1iaMStJibcIVSN1Jk%2f&ehk=oMEZnWcbPuTQQIU%2bkvATbzYLilEewnRPKR%2fjyCJMi8U%3d&risl=&pid=ImgRaw&r=0">
+                        <span>零基础学IT,月薪过万就来黑马程序员，黑马程序员成就IT梦想</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://ts1.cn.mm.bing.net/th/id/R-C.3562182895ed7e97e840aea6cdb55c36?rik=zDt9cIuUszBE%2fw&riu=http%3a%2f%2f10.idqqimg.com%2fqqcourse_logo_ng%2fajNVdqHZLLDFIz5bm1dwZJFrOh2Dgqic27lShXotRz2oVWUzGlicb5QLuyzJGo1iaMStJibcIVSN1Jk%2f&ehk=oMEZnWcbPuTQQIU%2bkvATbzYLilEewnRPKR%2fjyCJMi8U%3d&risl=&pid=ImgRaw&r=0">
+                        <span>零基础学IT,月薪过万就来黑马程序员，黑马程序员成就IT梦想</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://ts1.cn.mm.bing.net/th/id/R-C.3562182895ed7e97e840aea6cdb55c36?rik=zDt9cIuUszBE%2fw&riu=http%3a%2f%2f10.idqqimg.com%2fqqcourse_logo_ng%2fajNVdqHZLLDFIz5bm1dwZJFrOh2Dgqic27lShXotRz2oVWUzGlicb5QLuyzJGo1iaMStJibcIVSN1Jk%2f&ehk=oMEZnWcbPuTQQIU%2bkvATbzYLilEewnRPKR%2fjyCJMi8U%3d&risl=&pid=ImgRaw&r=0">
+                        <span>零基础学IT,月薪过万就来黑马程序员，黑马程序员成就IT梦想</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://ts1.cn.mm.bing.net/th/id/R-C.3562182895ed7e97e840aea6cdb55c36?rik=zDt9cIuUszBE%2fw&riu=http%3a%2f%2f10.idqqimg.com%2fqqcourse_logo_ng%2fajNVdqHZLLDFIz5bm1dwZJFrOh2Dgqic27lShXotRz2oVWUzGlicb5QLuyzJGo1iaMStJibcIVSN1Jk%2f&ehk=oMEZnWcbPuTQQIU%2bkvATbzYLilEewnRPKR%2fjyCJMi8U%3d&risl=&pid=ImgRaw&r=0">
+                        <span>零基础学IT,月薪过万就来黑马程序员，黑马程序员成就IT梦想</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://ts1.cn.mm.bing.net/th/id/R-C.3562182895ed7e97e840aea6cdb55c36?rik=zDt9cIuUszBE%2fw&riu=http%3a%2f%2f10.idqqimg.com%2fqqcourse_logo_ng%2fajNVdqHZLLDFIz5bm1dwZJFrOh2Dgqic27lShXotRz2oVWUzGlicb5QLuyzJGo1iaMStJibcIVSN1Jk%2f&ehk=oMEZnWcbPuTQQIU%2bkvATbzYLilEewnRPKR%2fjyCJMi8U%3d&risl=&pid=ImgRaw&r=0">
+                        <span>零基础学IT,月薪过万就来黑马程序员，黑马程序员成就IT梦想</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="https://ts1.cn.mm.bing.net/th/id/R-C.3562182895ed7e97e840aea6cdb55c36?rik=zDt9cIuUszBE%2fw&riu=http%3a%2f%2f10.idqqimg.com%2fqqcourse_logo_ng%2fajNVdqHZLLDFIz5bm1dwZJFrOh2Dgqic27lShXotRz2oVWUzGlicb5QLuyzJGo1iaMStJibcIVSN1Jk%2f&ehk=oMEZnWcbPuTQQIU%2bkvATbzYLilEewnRPKR%2fjyCJMi8U%3d&risl=&pid=ImgRaw&r=0">
+                        <span>零基础学IT,月薪过万就来黑马程序员，黑马程序员成就IT梦想</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

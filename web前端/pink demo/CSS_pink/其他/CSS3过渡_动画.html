@@ -1,0 +1,29 @@
+<!--
+transition:要过渡的属性 花费的时间 运动曲线 何时开始;
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 鼠标经过盒子，盒子变宽 */
+        div{
+            width: 200px;
+            height: 100px;
+            background-color: pink;
+            /* transition:要过渡的属性 花费的时间 运动曲线 何时开始; */
+            transition: width .5s;
+        }
+        
+        div:hover{
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!--
+常见的动画属性
+    @keyframes                  规定动画
+    animation-name              规定@keyframes动画的名称
+    animation-duration          规定持续时间
+    animation-timing-function   速度曲线，默认为ease,匀速为linear,步长为steps
+    animation-delay             动画开始时间，默认为0
+    animation-iteration-count   动画播放次数，默认位1，无限位infinite
+    animation-direction         是否反方向播放，默认为normal，反方向为alternate
+    animation-play-state:       是否暂停动画，默认为running，暂停为paused
+    animation-fill-mode         动画结束状态，保持为forwards,回到启示为backwards
+
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* 动画名称 */
+            animation-name: move;
+            /* 持续时间 */
+            animation-duration: 5s;
+            /* 动画速度曲线 */
+            animation-timing-function: ease;
+            /* 何时开始 */
+            animation-delay: 1s;
+            /* 重复播放两次 */
+            /* animation-iteration-count: 3; */
+            /* 无限循环播放 */
+            /* animation-iteration-count:infinite; */
+            /* 是否反方向播放 */
+            /* animation-direction: alternate; */
+            /* 保持结束状态 */
+            animation-fill-mode:forwards;
+
+        }
+        div:hover{
+            /* 鼠标经过停止动画 */
+            /* 暂停动画 */
+            animation-play-state: paused;
+        }
+
+        @keyframes move{
+            0%{
+                transform: translate(0);
+            }
+            100%{
+                transform: translate(1000px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

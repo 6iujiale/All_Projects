@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">CallingSystemServices</string>
+    <string name="navigation_note">Please confirm that the chassis is open before calling navigation.\nAnd the map is already positioned!</string>
+</resources>

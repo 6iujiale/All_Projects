@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三角</title>
+    <!--
+    <style>
+        .box1{
+        /*思路
+            1.不设置宽、高具体值
+            2.改变上下边框粗细属性：大小 边框样式  颜色
+        */
+            width: 0;
+            height: 0;
+            border: 100px solid transparent;/*transparent:透明*/
+            /* border-top: 100px solid pink;
+            border-bottom: 100px solid blue;
+            border-left: 100px solid purple; */
+            border-right: 100px solid yellow;
+        }
+    </style>
+     -->
+    <style>
+        * {
+            padding: 0;
+            /* margin: 0; */
+
+        }
+
+        .box1 {
+            height: 300px;
+            width: 300px;
+            background-color: blue;
+            position: absolute;
+            left: 50%;
+            top: 20%;
+            margin-left: -150px;
+        }
+
+        .box2 {
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;/*transparent:透明*/
+            border-bottom: 50px solid pink;
+            position: relative;
+            left: 50%;
+            margin-left: -50px;
+            top: 5%;
+        }
+
+        .box3 {
+            /* width: 100px;
+            height: 100px; */
+            width: 0;
+            height: 0;
+            border: 100px solid yellow;
+            /* background-color: yellow; */
+            margin: 0px auto;
+            position: relative;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+
+</html>

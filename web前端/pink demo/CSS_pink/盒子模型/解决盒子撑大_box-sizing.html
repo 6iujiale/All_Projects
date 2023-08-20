@@ -1,0 +1,45 @@
+<!--
+css3盒子模型——解决盒子被撑大问题
+     box-sizing: border-box;
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css3盒子模型</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing:border-box;/*解决盒子撑大问题*/
+        }
+
+        div{
+            /* 盒子大小：width+padding+border */
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* padding&border撑大盒子 */
+            border: 20px solid red;
+            padding: 50px;
+            margin-bottom: 30px;
+        }
+
+        p{
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            border: 20px solid red;
+            padding: 50px;
+            /* 添加box-sizing属性,可解决盒子撑大问题 */
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div>小猪佩奇</div>
+    <p>小猪乔治</p>
+</body>
+</html>

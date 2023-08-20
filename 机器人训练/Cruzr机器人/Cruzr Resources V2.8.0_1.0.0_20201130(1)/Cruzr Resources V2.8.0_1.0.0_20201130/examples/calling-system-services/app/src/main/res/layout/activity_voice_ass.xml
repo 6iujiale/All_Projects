@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <Button
+        android:id="@+id/btnShowAss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="220dp"
+        android:layout_marginTop="45dp"
+        android:text="Show Assistant"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="220dp" />
+
+    <Button
+        android:id="@+id/btnHideAss"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="Hide Assistant"
+        app:layout_constraintStart_toEndOf="@+id/btnShowAss"
+        app:layout_constraintTop_toTopOf="@+id/btnShowAss"
+        android:layout_marginLeft="60dp" />
+
+    <Button
+        android:id="@+id/btnShowSpecificPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="190dp"
+        android:layout_marginLeft="190dp"
+        android:layout_marginTop="20dp"
+        android:text="Show specific prompt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnShowAss" />
+
+    <Button
+        android:id="@+id/btnHideSpecificPrompt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="Hide specific prompt"
+        app:layout_constraintStart_toEndOf="@+id/btnShowSpecificPrompt"
+        app:layout_constraintTop_toTopOf="@+id/btnShowSpecificPrompt"
+        android:layout_marginLeft="60dp" />
+
+    <Button
+        android:id="@+id/btnShowPartWakeup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="170dp"
+        android:layout_marginLeft="170dp"
+        android:layout_marginTop="20dp"
+        android:text="Show wakeup button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnShowSpecificPrompt" />
+
+    <Button
+        android:id="@+id/btnHidePartWakeup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="Hide wakeup button"
+        app:layout_constraintStart_toEndOf="@+id/btnShowPartWakeup"
+        app:layout_constraintTop_toTopOf="@+id/btnShowPartWakeup"
+        android:layout_marginLeft="60dp" />
+
+    <Button
+        android:id="@+id/btnShowPartMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginLeft="180dp"
+        android:layout_marginTop="20dp"
+        android:text="Show message area"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnShowPartWakeup" />
+
+    <Button
+        android:id="@+id/btnHidePartMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:text="Hide message area"
+        app:layout_constraintStart_toEndOf="@+id/btnShowPartMessage"
+        app:layout_constraintTop_toTopOf="@+id/btnShowPartMessage"
+        android:layout_marginLeft="60dp" />
+
+    <Button
+        android:id="@+id/btnTurnOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="260dp"
+        android:layout_marginLeft="260dp"
+        android:layout_marginTop="20dp"
+        android:text="Turn on"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnShowPartMessage" />
+
+    <Button
+        android:id="@+id/btnTurnOff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="20dp"
+        android:text="Turn off"
+        app:layout_constraintStart_toEndOf="@+id/btnTurnOn"
+        app:layout_constraintTop_toBottomOf="@+id/btnHidePartMessage" />
+</android.support.constraint.ConstraintLayout>

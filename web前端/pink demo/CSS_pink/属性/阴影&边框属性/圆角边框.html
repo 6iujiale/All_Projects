@@ -1,0 +1,54 @@
+<!--
+    圆角边框
+        border-radius: px;
+
+        参数值可为数值或百分比的形式
+        正方形设置为圆，数值为高/宽的50%
+        圆角矩形，数值为高度的50%
+        简写属性为四个值：左上角  右上角 右下角 左下角
+        border-top-left-radius  .....
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.yuanxing {
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            border-radius: 150px;
+            /*正方形盒子,高度与宽度的一半*/
+            margin: 100px auto;
+        }
+        
+        div.yuanjiaojuxing {
+            width: 300px;
+            height: 150px;
+            background-color: pink;
+            border-radius: 75px;
+            margin: 100px auto;
+        }
+        
+        div.radius {
+            width: 300px;
+            height: 150px;
+            background-color: pink;
+            border-radius: 10px 20px 30px 40px;
+            margin: 100px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="yuanxing"></div>
+    <div class="yuanjiaojuxing"></div>
+    <div class="radius"></div>
+</body>
+
+</html>

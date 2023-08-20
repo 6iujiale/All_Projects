@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .map{
+            width: 800px;
+            height: 600px;
+            background-image: url('https://ts1.cn.mm.bing.net/th/id/R-C.1c21c21caf80dfc945924a0f97995cac?rik=SmxFT3FrMXesPA&riu=http%3a%2f%2fwww.mswhw.cn%2fsymcxh_pic%2fUploadFile%2fzgdtmap2.gif&ehk=8URP%2bmXcavClRQnDBgqIKxie8faUa0csIyTKYuBlB%2f8%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1');
+            background-size: 100% 100%;
+            margin: 0 auto;
+            position: relative;
+            color: red;
+        }
+        .map .city1{
+            position: absolute;
+            left: 59%;
+            top: 54%;
+        }
+        .map .city2{
+            position: absolute;
+            top: 60%;
+            left: 20%;
+
+        }
+
+        .map .city3{
+            position: absolute;
+            bottom: 17%;
+            left: 60%;
+        }
+
+        .dotted{
+            width: 8px;
+            height: 8px;
+            background-color:#008FFF;
+            border-radius: 4px;
+        }
+
+        div[class^="pulse"]{
+            width: 8px;
+            height: 8px;
+            box-shadow: 0 0 12px#009dfd;
+            /* 波纹居中，放大后中大后先中心发散*/
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            /* animation: pulse 1.0s linear infinite; */
+        }
+        .city2 .pulse2{
+            animation-delay: 0.4s;
+        }
+        .city3 .pulse3{
+            animation-delay: 0.8s;
+        }
+        @keyframes pulse{
+            0%{
+                border-radius: 50%;
+            }
+            70%{
+                width: 40px;
+                height: 40px;
+                opacity: 1;
+                border-radius: 50%;
+            }
+            100%{
+                width: 70px;
+                height: 70px;
+                opacity: 0;
+                border-radius: 50%;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="map">
+        <!-- 河南 -->
+        <div class="city1">
+            <div class="dotted">
+                <div class="pulse1"></div>
+                <div class="pulse2"></div>
+                <div class="pulse3"></div>
+            </div>
+        </div>
+        <!-- 西藏 -->
+        <div class="city2">
+            <div class="dotted">
+                <div class="pulse1"></div>
+                <div class="pulse2"></div>
+                <div class="pulse3"></div>
+            </div>
+        </div>
+        <!-- 广东 -->
+        <div class="city3">
+            <div class="dotted">
+                <div class="pulse1"></div>
+                <div class="pulse2"></div>
+                <div class="pulse3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

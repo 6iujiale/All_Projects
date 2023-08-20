@@ -1,0 +1,307 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.w {
+    width: 1542px;
+    margin: 0px auto;
+}
+
+.header {
+    width: 1690.67px;
+    height: 70px;
+    background-color: #FF6600;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.header .logo img {
+    width: 110px;
+    height: 50px;
+    margin: 10px 0;
+    margin-left: 90px;
+    float: left;
+}
+
+.header .search {
+    width: 560px;
+    height: 40px;
+    background-color: white;
+    float: left;
+    margin: 15px 350px;
+    border-radius: 20px 20px 20px 20px;
+}
+
+.header .search .main input {
+    width: 442px;
+    height: 40px;
+    border-radius: 20px 0 0 20px;
+    border: 0px solid #FF6600;
+    float: left;
+    outline: none;
+}
+
+.header .search span {
+    float: left;
+}
+
+.header .search span a {
+    font-size: 13px;
+    color: #999999;
+    line-height: 40px;
+    padding-left: 18px;
+}
+
+.header .search span a::before {
+    content: "🔥";
+}
+
+.header .search .content {
+    width: 32px;
+    height: 32px;
+    border-radius: 16px;
+    background-color: #FF6600;
+    float: right;
+    margin: 4px 6px;
+}
+
+.header .search .content img {
+    width: 18px;
+    height: 18px;
+    margin: 7px auto;
+    margin-left: 7px;
+}
+
+.header .user {
+    width: 144px;
+    height: 70px;
+    float: right;
+    margin-right: 70px;
+}
+
+.header .user ul li {
+    width: 40px;
+    height: 70px;
+    float: left;
+    margin: 10px 4px;
+}
+
+.header .user ul li span a {
+    color: #FFFFCC;
+    font-size: 8px;
+}
+
+.goods {
+    width: 1542px;
+    height: 420px;
+    margin-top: 100px;
+    overflow: hidden;
+}
+
+.goods .hd {
+    width: 100%;
+    height: 50px;
+    float: left;
+}
+
+.goods .hd h2 {
+    width: 300px;
+    height: 100%;
+    font-size: 26px;
+    float: left;
+    padding-top: 12px;
+}
+
+.goods .hd .switch_icon ul {
+    width: 48px;
+    height: 24px;
+    float: right;
+    margin: 14px 0;
+}
+
+.goods .hd .switch_icon ul span {
+    width: 24px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    float: left;
+    color: #999999;
+}
+
+.goods .hd .switch_icon ul li .next {
+    border-radius: 12px;
+    background-color: #F4F4F4;
+}
+
+.goods .hd .switch_icon ul li .next:hover {
+    color: #FDFDFD;
+}
+
+.goods .main_leftbox {
+    width: 432px;
+    height: 352px;
+    margin-top: 18px;
+    float: left;
+    overflow: hidden;
+}
+
+.goods .main_leftbox .photo {
+    width: 100%;
+    height: 241px;
+}
+
+.goods .main_leftbox .photo img {
+    border-radius: 10px 15px 0 0;
+}
+
+.goods .main_leftbox .content {
+    width: 100%;
+    height: 111px;
+    background-color: #F8F8F8;
+}
+
+.goods .main_leftbox .content span a {
+    color: black;
+    text-align: center;
+    padding-top: 35px;
+    display: block;
+}
+
+.goods .main_leftbox .content span a:hover {
+    color: #FF6600;
+}
+
+.goods .main_leftbox span p,
+.main_rightbox span p {
+    color: #999999;
+    font-size: 14px;
+    padding-left: 25px;
+}
+
+.goods .main_rightbox {
+    width: 1098px;
+    height: 352px;
+    margin-top: 18px;
+    float: right;
+}
+
+.goods .main_rightbox .one>li {
+    width: 210px;
+    height: 160px;
+    float: left;
+    margin-right: 12px;
+}
+
+.goods .main_rightbox .one li img,
+.two li img {
+    width: 210px;
+    height: 117px;
+    border-radius: 5px 5px 5px 5px;
+}
+
+.goods .main_rightbox .one a,
+.main_rightbox .two a {
+    color: black;
+}
+
+.goods .main_rightbox .two>li {
+    width: 210px;
+    height: 162px;
+    float: left;
+    margin-top: 30px;
+    margin-right: 12px;
+}
+
+.bottom_tip {
+    height: 74px;
+    margin-top: 50px;
+    position: relative;
+}
+
+
+/* .bottom_tip img {
+    width: 88px;
+    height: 73px;
+    display: block;
+    margin: auto;
+} */
+
+
+/*子绝父相定位居中*/
+
+.bottom_tip img {
+    width: 88px;
+    height: 73px;
+    position: absolute;
+    left: 50%;
+}
+
+.bottom_tip span {
+    font-size: 12px;
+    color: #999999;
+    position: absolute;
+    left: 57%;
+    bottom: 30%;
+}
+
+.footer {
+    width: 1690.67px;
+    height: 266px;
+    margin-top: 10px;
+}
+
+.footer .content {
+    width: 1250px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.footer .content img {
+    width: 170px;
+    height: 60px;
+}
+
+.footer .content .main1 {
+    width: 890px;
+    height: 202px;
+    position: absolute;
+    left: 14.5%;
+    bottom: 10%;
+}
+
+.footer .content .main1 li a {
+    font-size: 14px;
+    /* background-color: firebrick; */
+    border-right: 2px solid black;
+    float: left;
+    padding: 0 15px;
+    color: black;
+}
+
+.footer .content .main1 .mian2 {
+    width: 840px;
+    height: 111px;
+    margin-top: 30px;
+    margin-left: 15px;
+    font-size: 12px;
+    color: #999999;
+}
+
+.footer .content .main1 .main3 {
+    width: 150px;
+    height: 162px;
+    position: absolute;
+    left: 100%;
+    bottom: 20%;
+}
+
+.footer .content .main1 .main3 span {
+    font-size: 11px;
+    color: #222;
+    padding-left: 20px;
+}

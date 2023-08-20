@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!-- 解决BootStrap导航栏折叠按钮不起作用,按照顺序分别引入css和js -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./font/iconfont.css">
+  <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <style>
+    body {
+      background-color: aliceblue;
+    }
+
+    li {
+      list-style: none;
+    }
+
+    .carousel-caption {
+      bottom: 1.25rem;
+      padding-bottom: 2.25rem;
+      background-color: rgba(232, 232, 237, 0.2);
+    }
+
+    /*     #short-nav img {
+      width: 35px;
+      height: 35px;
+    }
+ */
+    .row_x>* {
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+
+    .overflow_p {
+      display: -webkit-box;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+    }
+
+    #ts_activity .card {
+      flex: 1;
+      overflow: hidden;
+      transition: .5s;
+      box-shadow: 5px 10px 20px rgba(202, 168, 168, 0.3);
+      border-radius: 20px;
+      border: 5px solid #fff;
+      background-color: #fff;
+      border: 1px solid gray;
+    }
+
+    #ts_activity .card>img {
+      width: 35px;
+      height: 35px;
+    }
+
+    #ts_activity .card:hover {
+      flex-basis: 20%;
+    }
+
+    #ts_activity:hover>img {
+      width: 100%;
+    }
+
+    #extend img {
+      width: 80px;
+      height: 80px;
+    }
+
+    #extend h5 {
+      font-size: 16px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 导航栏 -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid justify-content-between mx-2">
+      <a class="navbar-brand" href="#"><img src="https://szlib.org.cn/media/images/logo.png" alt=""
+        class="img-fluid"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">首页</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">新闻资讯</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">资源导航</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">服务指南</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">图书馆网</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">关于深图</a>
+          </li>
+        </ul>
+        <form class="d-flex d-md-none" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <div class="container  d-none d-sm-block">
+    <!-- 文献搜索 -->
+    <div class="row my-3 bg-primary p-2"
+      style="border: 4px solid red;border-radius: 40px;box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);">
+      <!-- 设置尺寸小于sm时候隐藏 d-none d-sm-block-->
+      <div class="col-2 dropdown">
+        <a class="btn dropdown-toggle border-0" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          资料搜索
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#">图书馆之城</a></li>
+          <li><a class="dropdown-item" href="#">深圳文献湾</a></li>
+        </ul>
+      </div>
+      <div class="col-10">
+        <form class="d-flex bg-white" role="search" style="border-radius: 10px;">
+          <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="请输入检索信息">
+          <datalist id="datalistOptions">
+            <option value="图书馆馆藏书">
+            <option value="报刊报纸">
+            <option value="音像资料">
+            <option value="好书推荐">
+          </datalist>
+          <button class="btn btn-info btn-search" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <!-- 轮播图 -->
+    <div class="row row_x">
+      <div class="col-lg-9 col-sm-12 col-xs-12">
+        <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img src="./images/book1.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./images/book2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/book3.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img src="./images/book4.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="./images/book5.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third slide label</h5>
+                <p>Some representative placeholder content for the third slide.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-lg-3 col-sm-12 col-xs-12 col-md-12 bg-primary">
+        <div class="row h-100 p-5">
+          <a class="text-white text-decoration-none text-center bg-success" data-bs-toggle="offcanvas"
+            href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+            通知公告
+          </a>
+          <a class="text-white text-decoration-none text-center" data-bs-toggle="offcanvas" href="#offcanvasExample"
+            role="button" aria-controls="offcanvasExample">
+            业界动态
+          </a>
+          <a class="text-white text-decoration-none text-center" data-bs-toggle="offcanvas" href="#offcanvasExample"
+            role="button" aria-controls="offcanvasExample">
+            其他
+          </a>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">媒体报道</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <div>
+                Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images,
+                lists, etc.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 图书馆活动 -->
+      <div class="row row_x" id="ts_activity">
+        <div class="card-group text-center w-100 col-md" id="short-nav">
+          <div class="card">
+            <img src="./images/card-icon1.png" class="card-img-top mx-auto mt-2" alt="...">
+            <div class="card-body ">
+              <h5 class="card-title">讲座</h5>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/card-icon2.png" class="card-img-top mx-auto mt-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">活动</h5>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/card-icon3.png" class="card-img-top mx-auto mt-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">培训</h5>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="./images/card-icon4.png" class="card-img-top mx-auto mt-2" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">展览</h5>
+              <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 服务时间 -->
+      <div class="row row_x mt-5">
+        <h3 style="font-weight: bold;text-align: center;">服务须知</h3>
+        <!-- 须知 -->
+        <div class="col-md-5">
+          <div class="card text-bg-dark " style="height: 400px;">
+            <img src="./images/card-book1.png" class="img-fluid mt-3" alt="...">
+            <div class="card-img-overlay overflow_p ">
+              <h5 class="card-title">须知</h5>
+              <p class="card-text d-flex pb-2">
+                深圳图书馆365天为您提供多种形式的服务。</br>
+                网上图书馆、移动图书馆全天候为您开放，实行365天24小时不间断的服务。</br>
+                分布在全市的城市街区自助图书馆让您就近享受图书馆办证、借书、还书、预借取书等便捷服务。</br>
+              </p>
+              <button type="button" class="btn btn-primary d-none d-lg-block">了解更多</button>
+            </div>
+          </div>
+        </div>
+        <!-- 楼层，时间表 -->
+        <div class="col-md-7 px-4">
+          <!-- 楼层选择 -->
+          <div class="row p-3 bg-white row_x d-none d-md-block" style="border: 4px solid black;">
+            <ul class="nav nav-pills mb-3 col-md col-sm-12 d-flex justify-content-center" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                  type="button" role="tab" aria-controls="pills-home" aria-selected="true">一楼</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                  type="button" role="tab" aria-controls="pills-profile" aria-selected="false">二楼</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                  type="button" role="tab" aria-controls="pills-contact" aria-selected="false">三楼</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-disabled-tab" data-bs-toggle="pill" data-bs-target="#pills-disabled"
+                  type="button" role="tab" aria-controls="pills-disabled" aria-selected="false">四楼</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact2-tab" data-bs-toggle="pill" data-bs-target="#pills-contact2"
+                  type="button" role="tab" aria-controls="pills-contact2" aria-selected="false">五楼</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact2-tab" data-bs-toggle="pill" data-bs-target="#pills-contact3"
+                  type="button" role="tab" aria-controls="pills-contact3" aria-selected="false">六楼</button>
+              </li>
+            </ul>
+            <div class="tab-content text-center" id="pills-tabContent" style="height: 60px;">
+              <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0">中文报纸阅览区、中文期刊阅览区、期刊外借区、视障阅览室、少儿服务区、南书房、一楼展厅、讲读厅。</div>
+              <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                tabindex="0">
+                中文图书借阅区（二楼）、外文图书借阅区、主题图书区、总服务台、自助办证区、捐赠换书中心、二楼展厅。</div>
+              <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                tabindex="0">
+                中文图书借阅区（三楼）。</div>
+              <div class="tab-pane fade" id="pills-disabled" role="tabpanel" aria-labelledby="pills-disabled-tab"
+                tabindex="0">网络信息空间、音像资料借阅区、爱来吧i-lib、无线网络服务区、创客空间。</div>
+              <div class="tab-pane fade" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact-tab"
+                tabindex="0">
+                艺术设计区、世界文化区、法律区、影音馆（音乐坊/聚艺厅）、参考工具书区、外文报刊区、报告厅。</div>
+              <div class="tab-pane fade" id="pills-contact3" role="tabpanel" aria-labelledby="pills-contact-tab"
+                tabindex="0">
+                保障本服务区、深圳地方文献专区、深圳学派文献专区、港澳台文献专区、政府信息公开查询专区、古籍查阅服务台。
+              </div>
+            </div>
+          </div>
+          <div class="row row_x ">
+            <div class="accordion accordion-flush col-sm-12" id="accordionFlushExample" style="font-size: 15px;">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    自助图书馆开放时间
+                  </button>
+                </h2>
+                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">网上图书馆、自助图书馆全天候服务：
+                    每天 0:00至24:00</div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    主馆舍开放时间
+                  </button>
+                </h2>
+                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">
+                    周二至周日主馆舍开放时间：
+                    一楼至四楼：9:00-21:00,五楼至六楼：9:00-17:00
+                    少儿服务区：周二至周五12:00-18:00</br>
+                    周末、暑假期间 9:00-20:00
+                    法定节假日：请关注深圳图书馆服务通知</br>
+                    南书房、讲读厅：周一至周日 7:00-23:00</br>
+                    深圳捐赠换书中心：周二至周日10:00-17:00</br>
+                    逢周一内务整理，主馆舍不开放。
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                    交通指南
+                  </button>
+                </h2>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample">
+                  <div class="accordion-body">公车站：儿童医院、市民中心西站、莲花山公园站、市民中心站
+                    地铁站：少年宫站D出口、市民中心站C出口、福田站31出口、莲花西站B出口</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row row_x my-5">
+        <h3 style="font-weight: bold;text-align: center;">服务推广</h3>
+        <!-- 须知 -->
+        <div class="col-md-5">
+          <div class="card text-bg-dark " style="height: 400px;">
+            <img src="./images/card-book1.png" class="img-fluid mt-3" alt="...">
+            <div class="card-img-overlay overflow_p ">
+              <h5 class="card-title">须知</h5>
+              <p class="card-text d-flex pb-2">
+                &nbsp;&nbsp;&nbsp;&nbsp;实行“全面开放、免证进馆、分层管理、一卡通行”方式，全面推行自助服务。
+                “图书馆之城”统一服务、自助图书馆网提供了便利的服务，“深圳文献港”及其移动门户打造了数字资源共享平台。
+              </p>
+              <button type="button" class="btn btn-primary d-none d-lg-block">了解更多</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 px-4">
+          <div class="row" id="extend">
+            <div class="card-group text-center w-100 col-md">
+              <div class="card">
+                <img src="./images/card-icon1.png" class="card-img-top mx-auto mt-2" alt="...">
+                <div class="card-body ">
+                  <h5 class="card-title">城市街区自助图书馆</h5>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/card-icon2.png" class="card-img-top mx-auto mt-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">少儿服务</h5>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/card-icon3.png" class="card-img-top mx-auto mt-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">预借服务</h5>
+                </div>
+              </div>
+              <div class="card">
+                <img src="./images/card-icon4.png" class="card-img-top mx-auto mt-2" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title">文献转借服务</h5>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row" id="extend">
+            <div class="col-md">
+              <div class="card-group text-center w-100 col-md d-flex">
+                <div class="card">
+                  <img src="./images/card-icon1.png" class="card-img-top mx-auto mt-2" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">新书直通车服务</h5>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./images/card-icon2.png" class="card-img-top mx-auto mt-2" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">移动服务</h5>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./images/card-icon3.png" class="card-img-top mx-auto mt-2" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">短信服务</h5>
+                  </div>
+                </div>
+                <div class="card">
+                  <img src="./images/card-icon4.png" class="card-img-top mx-auto mt-2" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title">文献传递</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 常用资源 -->
+      <div class="row row_x my-5">
+        <h3 style="font-weight: bold;text-align: center;">常用资源</h3>
+        <!-- 须知 -->
+        <div class="col-md-5 col-sm-12 col-xs-12">
+          <div class="card text-bg-dark " style="height: 65%;">
+            <img src="./images/card-book1.png" class="img-fluid mt-3" alt="...">
+            <div class="card-img-overlay overflow_p ">
+              <h5 class="card-title">须知</h5>
+              <p class="card-text d-flex pb-2">
+                截至2022年底，本馆馆藏总量1277.93万册、件，包括纸质文献634.68万册，电子文献643.25万册、件，提供港台、时装和深圳地方文献等特色文献服务。
+              </p>
+              <button type="button" class="btn btn-primary d-none d-lg-block">更多资源</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 col-sm-12 col-xs-12 px-4">
+          <div class="card-group d-flex">
+            <div class="card">
+              <img src="./images/card-book1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">数字资源</h5>
+                <p class="card-text"><a href="#">知网,数字图书馆</a></p>
+                <button type="button" class="btn btn-primary d-none d-lg-block">了解更多</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./images/card-book1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">专题资源</h5>
+                <p class="card-text"><a href="#">知网,数字图书馆</a></p>
+                <button type="button" class="btn btn-primary d-none d-lg-block">了解更多</button>
+              </div>
+            </div>
+            <div class="card">
+              <img src="./images/card-book1.png" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">特色馆藏</h5>
+                <p class="card-text"><a href="#">知网,数字图书馆</a></p>
+                <button type="button" class="btn btn-primary d-none d-lg-block">了解更多</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 页脚 -->
+  <section class="mt-4">
+    <div class="container-fluid bg-dark">
+      <div class="text-center text-light p-2">
+        <p>Copyright©2008-2022 深圳图书馆</p>
+        <p>版权所有 粤ICP备08025529号
+        </p>
+        <p>21人工智能刘佳乐</p>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/mhDoLbDldZc3qpsJHpLogda//BVZbgYuw6kof4u2FrCedxOtgRZDTHgHUhOCVim" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>淘宝细线边框实现</title>
+    <!--思路
+        1.利用margin负值
+        2.相对定位or z-index提高层级
+    -->
+    <style>
+        ul li{
+            width: 150px;
+            height: 200px;
+            border: 2px solid red;
+            list-style: none;
+            float: left;
+            margin-left: -1px;
+        }
+        ul li:hover{
+            border: 2px solid blue;
+            /*如果盒子没定位，则鼠标经过添加相对定位即可*/
+            position: relative;
+            /*如果li都有定位，则用z-index提高层级*/
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+</html>

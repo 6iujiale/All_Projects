@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            text-decoration: none;
+        }
+        li{
+            list-style: none;
+        }
+        .w{
+            margin: 0 auto;
+            width: 1000px;
+        }
+        .nav{
+           
+            height: 50px;
+            background-color: #87CEEB;
+        }
+        .nav a{
+            display: inline-block;
+            width: 80px;
+            height: 100%;
+            line-height: 50px;
+            color: white;
+        }
+        .nav a:nth-child(1){
+            margin-left: 50px;
+        }
+        .box{
+            width: 300px;
+            height: 200px;
+            margin-top: 20px;
+            border: 1px solid #CECFD4;
+            box-sizing: border-box;
+        }
+        .box .hd{
+            width: 100%;
+            height: 40px;
+            line-height: 40px;
+            padding-left: 20px;
+        }
+        .box .bd{
+            width: 100%;
+            height: 160px;
+            font-size: 14px;
+        }
+        .box .bd li{
+            width: 100%;
+            height: 30px;
+            box-sizing: border-box;
+            padding: 10px;
+            margin-top: 2px;
+        }
+        .box .bd li::before{
+            content: " ";
+            width: 6px;
+            height: 6px;
+            display:inline-block;
+            border-radius: 3px;
+            background-color: black;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="w">
+        <div class="nav">
+            <a href="#">首页</a>
+            <a href="#">首页</a>
+            <a href="#">首页</a>
+            <a href="#">首页</a>
+            <a href="#">首页</a>
+            <a href="#">首页</a>
+            <a href="#">首页</a>
+        </div>
+        <div class="box">
+            <div class="hd">
+                <h4>热点新闻</h4>
+            </div>
+            <div class="bd">
+                <ul>
+                    <li>外交部发言人介绍中美接触情况</li>
+                    <li>外交部发言人介绍中美接触情况</li>
+                    <li>外交部发言人介绍中美接触情况</li>
+                    <li>外交部发言人介绍中美接触情况</li>
+                    <li>外交部发言人介绍中美接触情况</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

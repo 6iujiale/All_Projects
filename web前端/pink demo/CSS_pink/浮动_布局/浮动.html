@@ -1,0 +1,123 @@
+<!--
+浮动
+    选择器{ float：属性值;}
+        none    元素不浮动(默认值)
+        left    元素向左浮动
+        right   元素向右浮动
+
+    浮动元素一行显示    
+        重要特征:
+            1.脱离标准普通流的控制(浮)移动到指定位置(动)，(俗称脱标)
+            2.如果多个盒子都设置浮动，会按照属性值一行内显示并且顶端对齐排列。
+            注意：浮动的元素是互相靠在一起(不会有缝隙)，如果父级宽度装不下
+            这些浮动的盒子，多出的盒子会另起一行对齐。
+    
+    浮动元素具有行内块元素特性    
+
+-->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>什么是浮动</title>
+    <style>
+        .left,
+        .right {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            float: left;
+        }
+        
+        .right {
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="left">青龙</div>
+    <div class="right">白虎</div>
+</body>
+
+</html> -->
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浮动元素特性-浮动元素一行显示</title>
+</head>
+<style>
+    div {
+        width: 200px;
+        height: 200px;
+        background-color: pink;
+        float: left;
+    }
+    
+    .two {
+        background-color: green;
+        height: 500px;
+    }
+    
+    .four {
+        background-color: rgb(133, 126, 126);
+    }
+</style>
+
+<body>
+    <div class="one">1</div>
+    <div class="two">2</div>
+    <div class="there">3</div>
+    <div class="four">4</div>
+</body>
+
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        span,
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* display: inline-block; */
+            float: left;
+        }
+        
+        p {
+            height: 300px;
+            width: 300px;
+            background-color: purple;XD
+            float: right;
+        }
+    </style>
+</head>
+
+<body>
+    <span>1</span>
+    <span>2</span>
+    <div>div</div>
+    <p>p</p>
+</body>
+
+</html> -->

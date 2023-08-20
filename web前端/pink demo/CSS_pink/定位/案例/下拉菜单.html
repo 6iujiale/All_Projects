@@ -1,0 +1,82 @@
+<!-- 下拉菜单
+    无序列表的嵌套
+        ul>li>a(菜单项)>ul>li>a(下拉项)
+    元素显示模式
+        显示
+            .菜单:hover .下拉 {
+                display: block;
+            }
+        隐藏
+            .下拉 {
+                display: none;
+            }
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            text-decoration: none;
+        }
+        
+        .nav {
+            height: 40px;
+            background-color: #999;
+        }
+        
+        .libt {
+            float: left;
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+        }
+        
+        .libt a {
+            color: black;
+            display: block;
+        }
+        
+        .libt a:hover {
+            background-color: skyblue;
+        }
+        
+        .droplist {
+            display: none;
+        }
+        
+        .libt:hover .droplist {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul class="ullist">
+            <li class="libt">
+                <a href="#">菜单项</a>
+                <ul class="droplist">
+                    <li><a href="#">我是下拉1</a></li>
+                    <li><a href="#">我是下拉2</a></li>
+                    <li><a href="#">我是下拉3</a></li>
+                    <li><a href="#">我是下拉4</a></li>
+                </ul>
+            </li>
+            <li class="libt"><a href="#">菜单项</a></li>
+            <li class="libt"><a href="#">菜单项</a></li>
+            <li class="libt"><a href="#">菜单项</a></li>
+            <li class="libt"><a href="#">菜单项</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

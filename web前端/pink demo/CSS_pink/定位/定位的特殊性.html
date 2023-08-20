@@ -1,0 +1,40 @@
+<!--
+定位的特殊性
+绝对定位和固定定位也和浮动类似
+    1.行内元素添加绝对或固定定位，可以直接设置高度和宽度。
+    2.块级元素添加绝对或固定定位，如果不给高度或宽度，默认大小就是内容的大小。
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定位的特殊性</title>
+    <style>
+        span {
+            height: 200px;
+            width: 150px;
+            background-color: pink;
+            color: black;
+            /* display: block; */
+            position: absolute;
+            top: 300px;
+        }
+        
+        .box {
+            background-color: rgb(28, 174, 227);
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <span>123</span>
+    <div class="box">考试加油呀
+        <!-- <img src="https://img0.baidu.com/it/u=2899227935,1610563971&fm=253&fmt=auto&app=120&f=JPEG?w=690&h=370" alt=""> -->
+    </div>
+</body>
+
+</html>

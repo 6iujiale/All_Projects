@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var money=100;
+        loop:while(true){
+            var choose=prompt("请输入您想要的操作\n1.存钱\n2.取钱\n3.显示金额\n4.退出")
+            switch(choose){
+                case "1":
+                    c_money=prompt("请输入存钱的金额：");
+                    money+=parseInt(c_money); 
+                    break;
+                case "2":
+                    q_money=prompt("请输入取钱的金额：");
+                    // money-=parseInf(q_money);
+                    money-=parseInt(q_money);
+                    break;
+                case "3":
+                    alert("总金额为"+money);
+                    break;
+                case "4":
+                    break loop;
+                default:
+                    alert("输入指令不存在,请重试")
+            }
+        }
+ 
+    </script>
+</body>
+</html>

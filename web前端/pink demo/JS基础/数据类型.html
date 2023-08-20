@@ -1,0 +1,65 @@
+<!-- 
+js的数据类型
+    简单数据类型
+        Number
+            整型
+            浮点型
+
+        Boolean
+            true(1)
+            false(0)
+
+        String
+
+        Undefined
+            变量声明后未赋值
+        Null
+    复杂数据类型
+        Object
+        Array
+        Function
+    方法
+    isNan   判断非数字
+    length  获取字符串长度
+    typeof  查看类型
+
+    类型转换
+        转为字符类型
+            变量.toString()
+            String(变量)
+            +拼接字符串
+
+        转为数字类型
+            parseInt(变量)
+            parseFloat(变量)
+            Number(变量)
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        //isNaN判断非数字
+        //if数字返回false,不是数字返回true
+       console.log(isNaN(12))//false
+       console.log(isNaN("刘佳乐"))//true
+       //如果变量声明后未赋值,则undefined未定义数据类型
+       var str1;
+       console.log(str1);//undefined
+       //null空值
+       var str2=null;
+       console.log(str2);//null
+       length(str2)
+       //typeof 查看类型
+       console.log(typeof str2);//object类型
+    </script>
+</head>
+<body>
+    //js的变量数据类型只有程序运行中,根据等号右边的值确定的
+    //js是动态语言 变量的数据类型是可以变化的
+</body>
+</html> 

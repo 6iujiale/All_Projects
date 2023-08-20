@@ -1,0 +1,23 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "4766685",
+      "name": "home",
+      "font_class": "home",
+      "unicode": "e7c6",
+      "unicode_decimal": 59334
+    },
+    {
+      "icon_id": "7592554",
+      "name": "24gl-headphones",
+      "font_class": "24gl-headphones",
+      "unicode": "ea09",
+      "unicode_decimal": 59913
+    }
+  ]
+}

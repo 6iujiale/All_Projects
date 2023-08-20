@@ -1,0 +1,50 @@
+<!--
+精灵图
+    针对于小的背景图片
+    借助背景位置实现--background-position
+    左正右负
+    上正下负
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精灵图</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            width: 150px;
+            height: 150px;
+            margin: 100px auto;
+            background-repeat: no-repeat;
+        }
+        /* 拼出自己的名字 */
+        
+        .box1 {
+            background-position: 15px -330px;
+            background-image: url('https://img-blog.csdnimg.cn/2021050610303366.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTMzMTg4Nw==,size_16,color_FFFFFF,t_70');
+        }
+        
+        .box2 {
+            background-position: -480px -150px;
+            background-image: url('https://img-blog.csdnimg.cn/2021050610303366.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTMzMTg4Nw==,size_16,color_FFFFFF,t_70');
+        }
+        
+        .box3 {
+            background-position: 15px -330px;
+            background-image: url('https://img-blog.csdnimg.cn/2021050610303366.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTMzMTg4Nw==,size_16,color_FFFFFF,t_70');
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+
+</html>

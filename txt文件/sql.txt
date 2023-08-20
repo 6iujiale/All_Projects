@@ -1,0 +1,207 @@
+DDL数据库操作
+创建数据库，查询数据库，修改数据库，删除数据库。
+
+查询数据库
+show databases
+显示指定名称的数据的创建的SQL指令
+show create database 数据库名
+
+创建数据库
+create database 数据库名
+创建数据库，当指定名称的数据库不存在时执行
+create database  if   not  exists  数据库名
+创建数据同时指定数据库的字符集
+create database 数据库名 default  character set 编码方式
+
+修改数据库的字符集
+alter database 数据库名 character set 编码方式
+
+删除数据库
+drop database 数据库名
+
+使用or切换数据库
+use 数据库名
+
+创建数据表
+create table 表名 (列名称 数据类型,列名称 数据类型,列名称 数据类型)
+约束不能为空值
+create table 表名 (列名称 数据类型 约束 ,列名称 数据类型 not null ,列名称 数据类型 not null )
+
+查询数据表
+show tables
+
+查询数据表结构
+desc 数据表名
+
+删除数据表
+drop table 数据表
+
+修改数据表名
+alter table 表名 rename to 新表名
+修改数据表字符集和数据库一致
+alter table 表名 character set 编码格式
+添加字段(添加列)
+alter table 表名  add  列名称 数据类型
+修改字段的列名和类型
+alter table 表名  change  列名称 修改后列名称 修改后数据类型
+只修改字段类型
+alter table 表名 modify 列名称 数据类型
+
+#删除字段(表结构的修改)
+alter table 表名 drop 列名称
+#删除整张表
+drop table 表名
+#清除整张表的数据
+truncate  table  表名
+
+数据类型————数值、字符串、日期类型
+
+字段约束
+非空约束(not null)：限制此列的值必须为空，不能为空
+唯一约束(unique)：在表中的多条数据，此列的值不能重复
+主键约束(primary key)：非空+不重复，能够为唯一标识数据表中的一条数据
+外键约束(foregin key)：建立不同表之间的关联关系
+自增(auto_increment)：自动增长约束
+
+#删除数据表主键约束
+alter table 表名 drop primary key
+
+
+DML添加数据  删除数据  修改数据
+
+插入数据
+#向数据表中指定的列表添加数据
+insert  into  表名(字段名)  values() 
+insert  into  表名  values();
+
+#关联关系
+一对一
+一对多
+多对一
+多对多
+
+
+#外键约束
+将一个列添加外键约束与另一张的主键(唯一列)进行关联之后，这个外键约束的列添加的数据必须要在关联的关键字段存在。
+
+#设置外键格式
+#1.先建表，再添加外键约束
+constraint  外键名(自定义)  foreign key(列名)  references  关联表名(主键列);
+#2.在创建表之后，位列名添加外键约束
+alter table  关联表名  add  constranit   外键名(自定义)  foreign key(列名)  references  关联表名(主键列);
+
+
+删除数据
+delete from 表名 where 列名=”值“
+
+修改数据(单列)
+update 表名 set  列名=“修改内容” where 列名="值"[寻找条件]；
+修改数据(多列)
+update 表名 set  列名="修改内容",列名="修改内容"  where 列名="值"；
+
+#查询
+select  字段名,字段名,字段名  from  表名;
+
+#where子句（单条件）
+select * from 数据库.表名 where 字段名=”值“;
+select * from 数据库.表名 where 字段名!=”值“;
+#where子句 （多条件）
+select * from 数据库.表名 where 字段名=”值“ and 字段名=”值“;
+select * from 数据库.表名 where 字段名=”值“ or 字段名=”值“;
+select * from 数据库.表名 where 字段名=”值“ not 字段名=”值“;
+
+#like子句(模糊查询)
+%表示任意多个字符【%o%包含字母o】
+select  * from 表名 where 字段名 like "%o%"；#查看包含o的信息
+
+_o%表示任意一个字符【_o%表示第二个字母为o】
+select  * from 表名 where 字段名 like "_o%"；
+
+#查询结果进行处理
+1、设置查询的列
+2、计算列
+3、字段别名
+select stuNo as 学号,name as 姓名,className as 班级 from tb_student;
+4、消除重复行
+select  distinct  列名  from 表名;#查询不重复信息
+5、消除空值
+select  字段 from 表名 where 表名 is not null;
+
+
+#order by排序
+#升序(默认)
+select * from 表名 where 列名=”值“  order by 条件列名 asc;
+#降序 
+select * from 表名 where 列名=”值“  order by 条件列名 desc;
+
+#聚合函数
+AVG
+SUM
+MAX
+MIN
+COUNT
+
+#时间函数
+now()	获取当前时间 
+sysdate()	获取当前系统时间
+select now();#查询当前系统的时间
+SELECT  * ,TIMESTAMPDIFF(YEAR,字段, CURDATE()) as 年龄 from 表名;#查询年龄
+
+#字符串函数
+concat#拼接多列
+upper#将字段的值转为大写
+lower#讲指定列的值转为小写
+substring#从指定列中截取部分显示，start从1开始
+substring(列名,1,4)从1截到4
+
+#聚合函数
+avg
+sum
+max
+min
+count
+
+#分组查询
+select 分组字段
+from  表名
+[where 条件]
+group by 分组列名
+[having 条件]
+[order by 排序字段]
+语句执行属性 
+1.根据where条件从数据库查询记录
+2.group by对查询记录进行分组
+3.执行having对分组后的数据进行筛选
+
+
+#连接查询
+inner join 内连接
+left  join  左连接
+right  join 右连接
+
+#内连接
+select  .... from 表名1  inner join 表名2 ;
+#内连接过滤条件  on设置匹配条件
+select  .... from 表名1  inner join 表名2  on  表1.共性字段=表2.共性字段;
+
+#左连接(显示左表中的所有记录)
+显示左表中的所有数据,如果右表中存在与左表满足匹配条件的数据,则进行匹配，不满足匹配则为nul
+select  ...... from 左表名1 left join 右表名2  on  表1.共性字段=表2.共性字段;
+
+#右连接(显示右表中的所有记录)
+select  ...... from 左表名1 right join 右表名2  on  表1.共性字段=表2.共性字段;
+
+
+
+#子查询(嵌套查询)
+#1.返回结果是单个值(单行单列)
+select class_id from classes where class_name="Java2104";#获取Java2104全部信息
+select * from students where cid=(select class_id from classes where class_name="Java2104");#嵌套
+
+#2.返回的结果是多个值(单列多行),条件使用in
+select class_id from classes where class_name like "Java%"#获取全班Java班
+select * from students where cid in (select class_id from classes where class_name like "Java%");
+
+#3.返回结果是多个值(多行多列)
+select * from (select * from students where cid=1)students where students.stu_gender="男";#查询cid=1的班级中性别为男的学生信息
+

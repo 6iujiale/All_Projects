@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        /* 屏幕上最大宽度为800px样式（<800px） */
+        @media screen and (max-width: 800px) {
+            body {
+                background-color: pink;
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: yellow;
+            }
+        }
+
+        /* 大于800 */
+        @media screen and (min-width: 800px) {
+            body {
+                background-color: purple;
+            }
+        }
+
+        /* 购物车 */
+        .top {
+            height: 1rem;
+            font-size: 0.5rem;
+            background-color: green;
+            color: white;
+            text-align: center;
+            line-height: 1rem;
+        }
+
+        @media screen and (min-width:320px) {
+            html {
+                font-size: 50px;
+            }
+        }
+
+        @media screen and (min-width: 640px) {
+            html {
+                font-size: 100px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="top">购物车</div>
+</body>
+
+</html>

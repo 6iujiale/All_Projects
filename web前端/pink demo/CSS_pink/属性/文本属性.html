@@ -1,0 +1,159 @@
+<!--CSS笔记(3)
+文本
+    颜色
+        color:颜色;
+
+    对齐
+        left    左对齐(默认值)
+        right   右对齐
+        center  居中对齐
+        text-align:属性;
+
+    装饰(下划线、删除线、上划线)
+        none   默认。没有装饰线(最常用)
+        underline  下划线，链接a自带下划线(常用)
+        overline    上划线(几乎不用)
+        line-through  删除线(不常用)
+        text-decoration：属性;
+
+    缩进
+        text-indent: px;
+        text-indent: em; (1em=1文字大小)
+
+    行间距
+        line-height: px;
+-->
+
+
+
+<!--
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS文本外观属性之颜色</title>
+    <style>
+        div {
+            color: rgb(232, 39, 71);
+        }
+    </style>
+</head>
+<body>
+    <div>听说喜欢pink的色的男生，都喜欢男人</div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div>居中对齐标题</div>
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*
+        div {
+            text-decoration: underline; 上划线
+            text-decoration: line-through; 删除线
+            text-decoration: overline;  下划线
+        }
+        */
+        
+        a {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div>粉红色的回忆</div>
+    <a href="https://www.baidu.com" target="_blank">粉红色的回忆</a>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS样式外观之文本缩进</title>
+    <style>
+        p {
+            text-indent: 2em;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        一场突如其来的疫情，打破了春节阖家团圆的节奏。在这场没有硝烟的战争中，不安与感动交织。
+    </p>
+    <p>
+        时隔17年，84岁的钟南山再次挂帅出征，奔赴疫情一线。经历过2003年非典的90后医护人员自愿请战，小时候，他们被白衣天使保护；长大后，他们换了一身衣服，学着像前辈一样，治病救人和死神抢人。…… 时间之河川流不息，每一代青年都有自己的际遇和机缘，都要在自己所处的时代坐标上谋划人生、创造历史。 新年伊始，一起来重温人民日报写给青年的八封信（精华版汇编），这八封信“复古”却有温度；时代背景、青年梦想、观照自我全部包罗。
+    </p>
+    <p>
+        八封信，八个角度：梦想，奋斗，健康，榜样，择业，爱国，背景，未来……文采斐然，金句频出。这个特殊的时刻，尤其是对“出生时遇上非典，高考时遇见‘新冠’”这届高三生来说，读这几篇文章，别具意义。也许此时此刻，结合这半个多月来中国发生的一切，更能读懂“这个时代”，“中国”以及“青年”这几个字的内涵。
+    </p>
+</body>
+</html>
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS样式外观之文本行间距</title>
+    <style>
+        div {
+            line-height: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>中国人</div>
+    <p>
+        一场突如其来的疫情，打破了春节阖家团圆的节奏。在这场没有硝烟的战争中，不安与感动交织。
+    </p>
+    <p>
+        时隔17年，84岁的钟南山再次挂帅出征，奔赴疫情一线。经历过2003年非典的90后医护人员自愿请战，小时候，他们被白衣天使保护；长大后，他们换了一身衣服，学着像前辈一样，治病救人和死神抢人。…… 时间之河川流不息，每一代青年都有自己的际遇和机缘，都要在自己所处的时代坐标上谋划人生、创造历史。 新年伊始，一起来重温人民日报写给青年的八封信（精华版汇编），这八封信“复古”却有温度；时代背景、青年梦想、观照自我全部包罗。
+    </p>
+    <p>
+        八封信，八个角度：梦想，奋斗，健康，榜样，择业，爱国，背景，未来……文采斐然，金句频出。这个特殊的时刻，尤其是对“出生时遇上非典，高考时遇见‘新冠’”这届高三生来说，读这几篇文章，别具意义。也许此时此刻，结合这半个多月来中国发生的一切，更能读懂“这个时代”，“中国”以及“青年”这几个字的内涵。
+    </p>
+</body>
+
+</html>

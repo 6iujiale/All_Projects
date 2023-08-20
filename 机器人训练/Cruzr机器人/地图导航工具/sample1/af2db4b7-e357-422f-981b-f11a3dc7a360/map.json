@@ -1,0 +1,23 @@
+{
+	"DIYPngName" : "",
+	"createdAt" : "2020-11-09 17:49:52",
+	"dataFileName" : "map.data",
+	"extendDataFileName" : "map.exdata",
+	"id" : "af2db4b7-e357-422f-981b-f11a3dc7a360",
+	"lethalPgmName" : "",
+	"lethalPngName" : "",
+	"mapInfo" : 
+	{
+		"gridHeight" : 288,
+		"gridWidth" : 608,
+		"originX" : -16,
+		"originY" : -9.6000000000000014,
+		"resolution" : 0.05000000074505806
+	},
+	"name" : "sample1",
+	"obstacleFileName" : "",
+	"pgmFileName" : "map.pgm",
+	"pngFileName" : "map.png",
+	"slopeFileName" : "",
+	"yamlFileName" : "map.yaml"
+}

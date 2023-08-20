@@ -1,0 +1,100 @@
+管理文件
+	ls（查看目录信息）
+		ls-a  列出目录的所有文件，包括隐藏文件(系统和程序所需的配置文件)
+		ls-l   查看文件详细信息
+	drwxr-xr-x  2 test test 4096 Nov 19 01:14 Desktop
+		d:目录
+		rwxr-xr-x :文件权限
+		2：文件个数
+		test:用户
+		test:组
+		4096:文件大小
+		Nov 19 01:14：创建时间
+		Desktop：文件名
+	cd(切换目录)
+		cd  /   根目录
+		cd  ~  home目录
+		cd  -   进入上一次的工作路径
+		cd ../  进入上一级目录
+		cd ../.. 进入上上级目录
+	pwd(查看当前路径)
+	makdir(创建目录)
+		单个目录  makdir 目录名
+		多个目录  makdir -p  目录名/目录名/目录名
+	删除目录
+		rm  -r    递归处理， 将指定目录下的所有文件与子目录一并处理
+		rm  -f    强制删除文件或目录
+		rmdir(只能删除非空目录) 
+	mv(修改文件名或移动文件)
+		mv  原文件名   修改后文件名
+		mv 文件名       目标路径   mv *.txt  ~/Desktop
+		mv  文件夹名   目标路径   只写文件夹名代表全部移动
+	cp(文件或文件夹复制)
+·		cp    复制文件
+		cp  -r   复制文件夹(-r  复制目录及目录内所有项目)
+		cp -a 保留原文件属性的前提下复制文件   cp -a 文件路径  ~保存到home目录
+
+	查看文件内容
+		cat   文件名    一次显示整个文件
+		cat> 文件名   键盘创建一个文件
+		cat 文件 文件 >新文件   多个文件合并为一个文件
+	查找文件
+		find  *.txt（查看所有txt文件）
+管理用户
+	新建用户	 sudo useradd  -m  用户名  -s bin/bash  -g  群组  
+	删除用户   sudo  userdel  -r    用户名    (-r作用是把用户的主目录一起删除。)
+	用户密码更改   sudo passwd 用户名
+	
+管理软件
+	安装  	      sudo  apt  install  包名
+	卸载	      sudo  apt  remove  包名
+	查找可更新     sudo apt update(不更新仅查找)
+	升级               sudo apt upgrade
+
+vim使用
+	i	进入编辑模式
+	q	退出
+	w	保存
+	！	强制执行
+	wq!	强制保存退出
+	/	搜索
+其他：
+	history	历史记录或执行过的命令
+	！	调用历史命令，重新使用
+	ifconfig	查看ip
+	cal	查看日历
+	date	查看日期
+	shutdown  -r  now重启=reboot
+	shutdown  -h  now 立即关机
+	ln  -s 文件名  链接名	   创建软链接方便访问=windows的快捷方式
+	权限
+	      chmod(变动文件属性)
+		User、Group、及Other
+		　r=4，w=2，x=1
+		  chmod 777 file
+	      chgrp(转变文件所属用户组)
+	      chown(转变文件拥有者)
+	tree   显示文件夹树状结构
+
+python环境搭建
+	vscode网址：https://code.visualstudio.com/Download
+	python解释器：https://www.python.org/downloads/
+	查看python版本号：python -V
+	sudo  dpkg -i deb包名
+	pip模块安装：sudo apt install python3-pip(os、requests、bs4、pymysql)
+	pip下载库：pip install  库
+
+
+
+ubuntu20.04开启root用户
+https://blog.csdn.net/wang_space/article/details/107144986?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522164429587816780261917941%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=164429587816780261917941&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog
+
+十个效果酷炫的Linux系统操作指令
+https://blog.csdn.net/baidu_39629638/article/details/110232451
+
+
+ip地址
+10.1.56.153
+class56-40
+123456
+

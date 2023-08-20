@@ -1,0 +1,54 @@
+<!-- 
+数据类型转换
+    转为字符串类型
+        1.变量.toString()
+        2.String(变量)
+        3.+拼接字符串
+
+    转为数字类型
+        1.parseInt(变量)  转为数字类型,得到整数
+        2.parseFloat(变量) 转为数字类型,得到浮点数
+        3.Number(变量)
+    
+    转为布尔类型
+        Boolean(变量)
+        代表空、否定值会被转为false,如 0、NaN、null、undefined
+        其余的值都会被转为true
+
+-->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+     <!-- 转为字符串类型 -->
+     <script>
+         var num=10;
+         // console.log(typeof num.toString());
+         // console.log(typeof String(num));
+         var a=num+"";
+         console.log(typeof a);//String
+     </script>
+     <!-- 转为数字类型 -->
+     <script>
+        var a=prompt("请输入你的年龄");
+        //1.parseInt(变量)  转为数字类型,得到整数
+        console.log(parseInt(a),typeof parseInt(a));//12 number
+        //2.parseFloat(变量) 转为数字类型,得到浮点数
+        var b='3.1415926';
+        console.log(parseFloat(b),typeof parseFloat(b));
+        //3.Number(变量)
+        var c='1.123';
+        console.log(Number(c))
+     </script>
+     <!-- 转为boolean类型 -->
+    <script>
+        // 代表空、否定值会被转为false,如 0、NaN、null、undefined
+        console.log(Boolean(""))//false
+    </script>
+ </head>
+ <body>
+ </body>
+ </html>

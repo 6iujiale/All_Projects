@@ -1,0 +1,65 @@
+<!--
+单行文本溢出
+    1.white-space: nowrap;
+    2.overflow:hidden;
+    3.text-overflow:ellipsis;
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>单行文本溢出</title>
+    <style>
+        div{
+            width: 150px;
+            height: 150px;
+            background-color: pink;
+            margin: 100px auto;
+            /* 1.先强制性一行显示文本 */
+            white-space: nowrap;
+            /* 2.超出的部分隐藏 */
+            overflow:hidden;
+            /* 3.文字用省略号替代超出的部分 */
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        咱啥也不说，省略一万字吐槽
+    </div>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>多行文本溢出</title>
+    <style>
+        div{
+            height: 150px;
+            width: 65px;
+            background-color: pink;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            /* 弹性伸缩盒子模型显示 */
+            display: -webkit-box;
+            /* 限制在一个块级元素显示的文本行数 */
+            -webkit-line-clamp: 2;
+            /* 设置或检索伸缩盒子对象的子元素的排列方式 */
+            -webkit-box-orient: vertical;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        什么是人工智能？从广义上来说，人工智能 (AI) 是指机器或系统所呈现的任何模拟人类的行为。最基本的 AI
+        形式是对计算机进行编程，使它们能够根据从过去类似行为中收集的海量数据来“模拟”人类行为。从识别猫与鸟的差异到在生产设施中进行复杂作业，都属于这一范畴。
+    </div>
+</body>
+</html> -->

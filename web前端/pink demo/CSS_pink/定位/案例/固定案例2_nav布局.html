@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .w1,
+        .w2,
+        .w3 {
+            margin: 0 auto;
+        }
+        
+        .w1 {
+            width: 800px;
+            height: 600px;
+            background-color: pink;
+        }
+        
+        .w2 {
+            width: 800px;
+            height: 600px;
+            background-color: rgb(187, 16, 45);
+        }
+        
+        .w3 {
+            width: 800px;
+            height: 600px;
+            background-color: rgb(131, 56, 196);
+        }
+        
+        .fixed1 {
+            width: 150px;
+            height: 200px;
+            background-color: blue;
+            position: fixed;
+            /*1.走浏览器版心的一半
+              2.利用margin走版心盒子的一半
+            */
+            left: 50%;
+            margin-left: 400px;
+            top: 100px;
+        }
+        
+        .fixed2 {
+            width: 150px;
+            height: 200px;
+            background-color: rgb(14, 14, 242);
+            position: fixed;
+            right: 50%;
+            margin-right: 400px;
+            top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fixed1"></div>
+    <div class="fixed2"></div>
+    <div class="w1">版心盒子 800像素</div>
+    <div class="w2"></div>
+    <div class="w3"></div>
+</body>
+
+</html>
+深圳技师学院 21人工智能G5班刘佳乐

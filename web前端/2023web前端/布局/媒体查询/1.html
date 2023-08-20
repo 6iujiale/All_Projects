@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 当超小设备（<576px）时设置布局容器的宽度为100% */
+        @media screen and (max-width:575px){
+            .container{
+                width: 100%;
+                color: blue;
+            }
+        }
+        /* 当设备显示>=768px,布局容器宽度为720px */
+        @media screen and (min-width:768px) {
+            .container{
+                width: 720px;
+                color: green;
+            }
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .container{
+            height: 50px;
+            background-color: #ddd;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">布局容器</div>
+</body>
+</html>

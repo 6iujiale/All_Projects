@@ -1,0 +1,79 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "27888844",
+      "name": "咖啡",
+      "font_class": "kafei",
+      "unicode": "e657",
+      "unicode_decimal": 58967
+    },
+    {
+      "icon_id": "27888845",
+      "name": "薯条",
+      "font_class": "shutiao",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
+      "icon_id": "27888898",
+      "name": "珍珠奶茶",
+      "font_class": "zhenzhunaicha",
+      "unicode": "e659",
+      "unicode_decimal": 58969
+    },
+    {
+      "icon_id": "27914771",
+      "name": "雪糕",
+      "font_class": "xuegao",
+      "unicode": "e65a",
+      "unicode_decimal": 58970
+    },
+    {
+      "icon_id": "27921587",
+      "name": "奶酪",
+      "font_class": "nailao",
+      "unicode": "e65b",
+      "unicode_decimal": 58971
+    },
+    {
+      "icon_id": "27922584",
+      "name": "可乐",
+      "font_class": "kele",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "30308974",
+      "name": "海豹",
+      "font_class": "haibao",
+      "unicode": "e70f",
+      "unicode_decimal": 59151
+    },
+    {
+      "icon_id": "30308975",
+      "name": "小鸡仔",
+      "font_class": "xiaojizi",
+      "unicode": "e710",
+      "unicode_decimal": 59152
+    },
+    {
+      "icon_id": "30308976",
+      "name": "小鸭子",
+      "font_class": "xiaoyazi",
+      "unicode": "e711",
+      "unicode_decimal": 59153
+    },
+    {
+      "icon_id": "30308977",
+      "name": "小兔子",
+      "font_class": "xiaotuzi",
+      "unicode": "e712",
+      "unicode_decimal": 59154
+    }
+  ]
+}

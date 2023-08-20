@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        /* 需求制作一个进度条
+        当鼠标经过时进度条进度为100% */
+        .box1{
+            width: 150px;
+            height: 20px;
+            border: 2px solid red;
+            border-radius: 15px;
+        }
+        .box1 .box2{
+            width: 50%;
+            height: 18px;
+            margin: 1px 0px;
+            border-radius: 14px;
+            background-color: red;
+            transition: width 1.3s;
+        }
+        .box2:hover{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

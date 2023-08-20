@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: aliceblue;
+}
+
+.box {
+    width: 289px;
+    height: 450px;
+    background-color: #FCFFFC;
+    display: inline-block;
+    /*垂直居中*/
+}
+
+.box img {
+    width: 100%;
+    /*和父亲一样宽*/
+}
+
+.review {
+    font-size: 14px;
+    height: 70px;
+    padding: 0 28px;
+    margin-top: 30px;
+}
+
+.appraise {
+    padding: 0 28px;
+    font-size: 12px;
+    color: silver;
+}
+
+.info {
+    padding: 0 28px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.info h4 {
+    display: inline-block;
+    font-weight: 400;
+}
+
+.info span {
+    color: orange;
+}
+
+.info em {
+    font-style: normal;
+    color: silver;
+    margin: 0 6px 0 15px;
+    /*上右下左*/
+}
+
+.box2 {
+    width: 289px;
+    height: 450px;
+    background-color: #FCFFFC;
+    display: inline-block;
+    /*垂直居中*/
+}
+
+.box2 .img2 {
+    width: 100%;
+    /*和父亲一样宽*/
+}
+
+.review2 {
+    font-size: 14px;
+    height: 70px;
+    padding: 0 28px;
+    margin-top: 30px;
+}
+
+.appraise2 {
+    padding: 0 28px;
+    font-size: 12px;
+    color: silver;
+}
+
+.info2 {
+    padding: 0 28px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.info2 h4 {
+    display: inline-block;
+    font-weight: 400;
+}
+
+.info2 span {
+    color: orange;
+}
+
+.info2 em {
+    font-style: normal;
+    color: silver;
+    margin: 0 6px 0 15px;
+    /*上右下左*/
+}
